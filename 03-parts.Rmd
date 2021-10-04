@@ -25,7 +25,6 @@ theme_gtsummary_continuous2(statistic = "{mean}  ({sd})")
 
 ```{r echo=FALSE,include=FALSE}
 df <- haven::read_spss(file = "Dr_Lucien_data.sav")
-df <- df
 ```
 
 
@@ -86,7 +85,6 @@ df <- df %>% select(-type_vaccin,-methode_planing,-moment_lavage)
 Voici le tri à plat de la base des données, montrant les tendances générales pour toutes les variables d'étude.
 
 ```{r echo=FALSE}
-
 df %>% tbl_summary() %>%  
   modify_header(label="**Variables d'étude**") %>% bold_labels()
 ```

@@ -1,3 +1,0 @@
-"0",""
-"0","df %>% tbl_summary() %>%  "
-"0","  modify_header(label=""**Variables d'étude**"") %>% bold_labels()"
