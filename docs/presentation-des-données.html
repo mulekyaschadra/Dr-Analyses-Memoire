@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Presentation des données | Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche</title>
+  <meta name="description" content="Dans ce livre nous montrons d’abord le tri à plat de toutes les données et ensuite nous allons passer aux analyses proprement dites" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Presentation des données | Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dans ce livre nous montrons d’abord le tri à plat de toutes les données et ensuite nous allons passer aux analyses proprement dites" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Presentation des données | Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche" />
+  
+  <meta name="twitter:description" content="Dans ce livre nous montrons d’abord le tri à plat de toutes les données et ensuite nous allons passer aux analyses proprement dites" />
+  
+
+<meta name="author" content="Dr Lucien Bindu" />
+
+
+<meta name="date" content="2021-10-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="presentation-des-données.html"><a href="presentation-des-données.html"><i class="fa fa-check"></i><b>2</b> Presentation des données</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="presentation-des-données" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Presentation des données</h1>
+<p>Les donnés traités dans cette partie ont été récolté dur terrain par enquete dans la zone de santé de Kirotshe. au mois de septembre</p>
+<pre><code>## &lt;labelled&lt;double&gt;[10]&gt;: Sexe de l&#39;enfant
+##  [1] 1 1 1 1 1 2 1 2 1 1
+## 
+## Labels:
+##  value    label
+##      1 Masculin
+##      2  Féminin</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="presentation-des-données.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(df<span class="sc">$</span>statut_matrimonial)</span></code></pre></div>
+<pre><code>## [272 obs.] statut matrimonial de la mère
+## labelled double: 2 5 5 1 2 2 4 2 2 2 ...
+## min: 1 - max: 5 - NAs: 3 (1.1%) - 6 unique values
+## 5 value labels: [1] Célibataire [2] Marié [3] Divorcé [4] veuve [5] séparé
+## 
+##                   n     %  val%
+## [1] Célibataire   4   1.5   1.5
+## [2] Marié       222  81.6  82.5
+## [3] Divorcé       5   1.8   1.9
+## [4] veuve        23   8.5   8.6
+## [5] séparé       15   5.5   5.6
+## NA                3   1.1    NA
+## Total           272 100.0 100.0</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="presentation-des-données.html#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>type_vaccin,<span class="sc">-</span>methode_planing,<span class="sc">-</span>moment_lavage)</span></code></pre></div>
+<p>Voici le tri à plat de la base des données, montrant les tendances générales pour toutes les variables d’étude.</p>
+<div id="gwkbrtfcwi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#gwkbrtfcwi .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gwkbrtfcwi .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gwkbrtfcwi .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gwkbrtfcwi .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gwkbrtfcwi .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gwkbrtfcwi .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gwkbrtfcwi .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gwkbrtfcwi .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gwkbrtfcwi .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gwkbrtfcwi .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gwkbrtfcwi .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gwkbrtfcwi .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gwkbrtfcwi .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#gwkbrtfcwi .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwkbrtfcwi .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwkbrtfcwi .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#gwkbrtfcwi .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#gwkbrtfcwi .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gwkbrtfcwi .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#gwkbrtfcwi .gt_left {
+  text-align: left;
+}
+
+#gwkbrtfcwi .gt_center {
+  text-align: center;
+}
+
+#gwkbrtfcwi .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gwkbrtfcwi .gt_font_normal {
+  font-weight: normal;
+}
+
+#gwkbrtfcwi .gt_font_bold {
+  font-weight: bold;
+}
+
+#gwkbrtfcwi .gt_font_italic {
+  font-style: italic;
+}
+
+#gwkbrtfcwi .gt_super {
+  font-size: 65%;
+}
+
+#gwkbrtfcwi .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"><strong>Variables d'étude</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1"><strong>N = 272</strong></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Numéro de la fiche</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">136  (79)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Adresse permanente(Village)</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Birere</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BIRERE</td>
+<td class="gt_row gt_center">9 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE BURONG9</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE BURONGO</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE BUSAKABA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE BUSAKARA</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE CENTRE</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BULENGERO</td>
+<td class="gt_row gt_center">8 (2.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BURONGO</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUSAKARA</td>
+<td class="gt_row gt_center">5 (1.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUSHEKA</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUSHUHE</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kaduki</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KADUKI</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KADUKI STADE</td>
+<td class="gt_row gt_center">7 (2.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KAFEMBE</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KAMBA</td>
+<td class="gt_row gt_center">9 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KARUBA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KASHAKI MISHAVU</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KASURA</td>
+<td class="gt_row gt_center">9 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KASURA/KAKOMERO</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KATEMBE</td>
+<td class="gt_row gt_center">7 (2.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KIBONDE</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KIDHWATI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KING_KAHIRA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KINGI BUROHA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KINGI KAHIRA</td>
+<td class="gt_row gt_center">13 (4.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KINGI_KAHIRA</td>
+<td class="gt_row gt_center">5 (1.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kishusha</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KISHWATI</td>
+<td class="gt_row gt_center">9 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KISHWATSI</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KIZHWATI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">LULOBOGO</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MAJAGI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MANYUTSA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MANYUTSA I</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MATONGE</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MATUTSA I</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MAYUTSA</td>
+<td class="gt_row gt_center">5 (1.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MAYUTSA I</td>
+<td class="gt_row gt_center">7 (2.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MISHAVU</td>
+<td class="gt_row gt_center">6 (2.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mitumbala</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MITUMBALA</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MONIMA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MONUMENT</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MOSQUE</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MTUMBALA CENTRE</td>
+<td class="gt_row gt_center">8 (2.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MTUMBALA KAYIRENGE</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MTUMBALA MATOYE</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHUNUNU</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHUNUNU 1</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHWATI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHWATSI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUTUMBALA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUYUTSA I</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ndobogo</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">NDOBOGO</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RUSHOGA</td>
+<td class="gt_row gt_center">18 (6.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">SHASHA 1</td>
+<td class="gt_row gt_center">15 (5.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">SHASHA 2</td>
+<td class="gt_row gt_center">14 (5.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">TWEGERANE</td>
+<td class="gt_row gt_center">11 (4.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">TWIGERANE</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Aire de santé où se trouve le village</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BIROHA KINGI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BISHANGE</td>
+<td class="gt_row gt_center">11 (4.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUHORA_KINGI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BULENGERA</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BULENGERO</td>
+<td class="gt_row gt_center">27 (9.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUROHA-KINGI</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUROHA KAHIR</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUROHA KINGI</td>
+<td class="gt_row gt_center">12 (4.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">BUSHUHE</td>
+<td class="gt_row gt_center">17 (6.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">C S BISHANGE</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">C.S BISHANGE</td>
+<td class="gt_row gt_center">8 (2.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">C.S BUSHUHE</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kaduki</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KADUKI</td>
+<td class="gt_row gt_center">25 (9.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KARUBA</td>
+<td class="gt_row gt_center">25 (9.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KASURA</td>
+<td class="gt_row gt_center">17 (6.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KAUBA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KIDHWATI MUSHAKI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">KISHWATI MUSHAKI</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mitumbala</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MITUMBALA</td>
+<td class="gt_row gt_center">6 (2.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MSHUNUNU MUSHAKI</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MTUMBALA</td>
+<td class="gt_row gt_center">14 (5.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MTUMBULA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mushaki</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHAKI</td>
+<td class="gt_row gt_center">15 (5.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUSHAKI MUSHUNUNU</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MUTUMBALA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RUHOHA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RUHOHA_KAHIRA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RUHORA_KAHIRA</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">SAKE</td>
+<td class="gt_row gt_center">30 (11%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">SHASHA</td>
+<td class="gt_row gt_center">30 (11%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">statut matrimonial de la mère</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Célibataire</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Marié</td>
+<td class="gt_row gt_center">222 (83%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Divorcé</td>
+<td class="gt_row gt_center">5 (1.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">veuve</td>
+<td class="gt_row gt_center">23 (8.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">séparé</td>
+<td class="gt_row gt_center">15 (5.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">3</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Taille du ménage</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">8.13  (7.91)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">5</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien d'enfants d'âge scolaire(Primaires) avez-vous?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1</td>
+<td class="gt_row gt_center">68 (25%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2</td>
+<td class="gt_row gt_center">88 (33%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3</td>
+<td class="gt_row gt_center">67 (25%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4</td>
+<td class="gt_row gt_center">29 (11%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">5</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">6</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">7</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">43</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous dejà été à l'école?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">161 (60%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">107 (40%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">4</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Si oui quel niveau d'étude avez-vous?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Primaire</td>
+<td class="gt_row gt_center">93 (59%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Secondaire</td>
+<td class="gt_row gt_center">62 (39%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Universitaire</td>
+<td class="gt_row gt_center">3 (1.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre</td>
+<td class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">114</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelle est l'occupation de la mère?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ménagère</td>
+<td class="gt_row gt_center">49 (18%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Commerçante</td>
+<td class="gt_row gt_center">66 (25%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Employé à une ONG</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cultivatrice</td>
+<td class="gt_row gt_center">136 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Emplpoyée de l'Etat</td>
+<td class="gt_row gt_center">9 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre</td>
+<td class="gt_row gt_center">7 (2.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">3</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">271 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Tailleur</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelle est l'occupation du père?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ménagère</td>
+<td class="gt_row gt_center">11 (4.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Commerçante</td>
+<td class="gt_row gt_center">19 (7.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Employé à une ONG</td>
+<td class="gt_row gt_center">5 (2.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cultivatrice</td>
+<td class="gt_row gt_center">117 (47%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Emplpoyée de l'Etat</td>
+<td class="gt_row gt_center">43 (17%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre</td>
+<td class="gt_row gt_center">52 (21%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">25</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">250 (92%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ã‰leveu</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Chauffeur</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">DivorcÃ©</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Militaire</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Motard</td>
+<td class="gt_row gt_center">11 (4.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">MOTARD</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RAS</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sciere</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Scieur</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Tailleur</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelles sont les habitudes alides alimentaires pendant la grossesse</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Monotone</td>
+<td class="gt_row gt_center">44 (16%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Multivarié</td>
+<td class="gt_row gt_center">226 (83%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre habitude</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quels sont les interdits alimentaires de la mère pendant la grossessse</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">129 (47%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Å’UFS</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ã€ SIGNALER</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">ALIMENTS AROMANTIQUES</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Aucun</td>
+<td class="gt_row gt_center">26 (9.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Aucune</td>
+<td class="gt_row gt_center">4 (1.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Choux et Avocat</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Feuille de manioc et patate douce</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Haricot</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Haricot patate douce</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Haricots frai</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">L'huile</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">La patte, pomme de terre</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Les haricots</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oeufs</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pad d'interdits</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Parfait</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas</td>
+<td class="gt_row gt_center">42 (15%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas d'interdits</td>
+<td class="gt_row gt_center">17 (6.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas des interdits</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas les interdits alimentaires</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Patate  douce</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Patate douce</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Plusieures</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Poisson, viande</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">R A S</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">R.A.S</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rien</td>
+<td class="gt_row gt_center">17 (6.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RIEN</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rien Ã  signaler</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RIEN Ã€ SIGALER</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Riz</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">RIZ, FARINE DE MAÃS</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Serpent</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sombe, foufou</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Viande</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Viande de mouton</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Etes-vous un déplacé dans ce village de moins de 2 ans</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">37 (14%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">232 (86%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">3</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelles sont les causes de votre déplacement?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Guerre</td>
+<td class="gt_row gt_center">27 (82%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Aute</td>
+<td class="gt_row gt_center">6 (18%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">239</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre cause</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">271 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Violence</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Âge de l'enfant(mois)</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">89  (35)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">4</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Sexe de l'enfant</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Masculin</td>
+<td class="gt_row gt_center">130 (48%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Féminin</td>
+<td class="gt_row gt_center">140 (52%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Lieu où s'est déroulé l'acouchement</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">à domicile</td>
+<td class="gt_row gt_center">31 (13%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">FOSA</td>
+<td class="gt_row gt_center">205 (86%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">35</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">taille_enfant</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">124  (102)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">10</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">poids_enfant</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">24  (21)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">4</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">perimetre_enfant</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">305  (448)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">15</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Age gestationnel à l'acouchement</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">&lt;9 mois</td>
+<td class="gt_row gt_center">11 (4.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">9 mois</td>
+<td class="gt_row gt_center">227 (83%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">&gt;9mois</td>
+<td class="gt_row gt_center">29 (11%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ne sait pas</td>
+<td class="gt_row gt_center">5 (1.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Votre enfant a-t-il été pésé à la naissance?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">192 (72%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">75 (28%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">5</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">poids_enfant_naissance</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">2,770  (1,625)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">109</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Votre enfant est-il vacciné?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">262 (97%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">8 (3.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin1</td>
+<td class="gt_row gt_center">218 (88%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin2</td>
+<td class="gt_row gt_center">219 (88%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin3</td>
+<td class="gt_row gt_center">210 (84%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin4</td>
+<td class="gt_row gt_center">211 (85%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin5</td>
+<td class="gt_row gt_center">119 (48%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">type_vaccin6</td>
+<td class="gt_row gt_center">17 (6.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">23</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre type de vaccin</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">L'enfant a-t-il été supplémenté en vitamine A?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">253 (93%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">18 (6.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">L'enfant a-t-il eu la fièvre durant les 6mois?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">133 (49%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">139 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">l'enfant a-t-il eu une IRA durant les 6 mois passés?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">116 (43%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">152 (57%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">4</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">l'enfant a-t-il eu la rougeole l'année passée?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">262 (96%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">L'enfant a-t-il eu des Oeudèmes?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">11 (4.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">259 (96%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">L'enfant a-t-il fait la diarrhée les 6mois passés?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">43 (16%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">228 (84%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">qui était consulté en premier lieu quand l'enfant tombe malade?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">La FOSA</td>
+<td class="gt_row gt_center">215 (81%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Tradi Praticien</td>
+<td class="gt_row gt_center">27 (10%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre</td>
+<td class="gt_row gt_center">22 (8.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">8</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">256 (94%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ã€ domicile</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Chambre de priÃ¨re</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Domicile</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pharmacie</td>
+<td class="gt_row gt_center">11 (4.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">TÂ³ Ã  domicile</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Traitement Ã  domicile</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de repas que l'enfant mange par jour?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3 fois</td>
+<td class="gt_row gt_center">35 (13%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2 fois</td>
+<td class="gt_row gt_center">195 (73%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1 fois</td>
+<td class="gt_row gt_center">36 (14%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">6</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de fois que l'enfant prend des fruits par semaine?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Chaque jour</td>
+<td class="gt_row gt_center">22 (8.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Une fois</td>
+<td class="gt_row gt_center">68 (25%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Aucune</td>
+<td class="gt_row gt_center">179 (67%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">3</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">L'enfant reçoit-il une collation quand il va à l'école?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">35 (13%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">232 (87%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">5</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">espace_enfant_aine</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">7  (10)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">61</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous allaité l'enfant après acouchement?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">269 (99%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Sinon quelles sont les raisons?</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Après combien de temps de l'acouchement avez-vous mis l'enfant au sein?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dans 30 min</td>
+<td class="gt_row gt_center">223 (84%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dans 1 heure</td>
+<td class="gt_row gt_center">32 (12%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dans 24 heures</td>
+<td class="gt_row gt_center">11 (4.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">6</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous donné un autre aliment/ liquide autre que le lait maternel avant 6mois?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">66 (24%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">205 (76%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Si oui quel type de repas avez-vous donné??</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">L'eau</td>
+<td class="gt_row gt_center">19 (31%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autre lait que le lait maternel</td>
+<td class="gt_row gt_center">4 (6.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Bouillie</td>
+<td class="gt_row gt_center">36 (59%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">2 (3.3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">211</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous pressé et jeter le premier lait maternel?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">21 (7.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">250 (92%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Si oui quelles sont les raisons?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sale</td>
+<td class="gt_row gt_center">8 (73%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Crée des douleurs abdominales</td>
+<td class="gt_row gt_center">1 (9.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">2 (18%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">261</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Continuez-vous à allaiter après l'acouchement?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">235 (87%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">36 (13%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">1</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de temps allaitez-vous  dans 24h après l'acouchement?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">14  (14)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">102</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de mois avez-vous exclusivement allaité?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">8  (6)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">33</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de mois avez-vous  allaité l'enfant?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">20  (10)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">19</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Qui a l'habitude de s'occuper de l'enfant?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mère</td>
+<td class="gt_row gt_center">199 (74%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">sœur</td>
+<td class="gt_row gt_center">40 (15%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Grand-mère</td>
+<td class="gt_row gt_center">14 (5.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Berceuse</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">7 (2.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Age de la mère</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">33  (7)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">5</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Âge à la première grossesse</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">17.98  (3.25)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">17</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelles est la parité(Nombre de grossesses</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">6.45  (2.60)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">26</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous fait la CPN?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">260 (96%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">10 (3.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Si oui au quantième mois de grossesse avez-vous commencé ?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3</td>
+<td class="gt_row gt_center">79 (31%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4</td>
+<td class="gt_row gt_center">87 (34%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">5</td>
+<td class="gt_row gt_center">40 (16%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">6</td>
+<td class="gt_row gt_center">21 (8.2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">7</td>
+<td class="gt_row gt_center">25 (9.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">8</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">9</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">16</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">27</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">16</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de fois vous visitez les services CPN durant la grossesse?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1</td>
+<td class="gt_row gt_center">17 (6.5%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2</td>
+<td class="gt_row gt_center">31 (12%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3</td>
+<td class="gt_row gt_center">63 (24%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4</td>
+<td class="gt_row gt_center">131 (50%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">5</td>
+<td class="gt_row gt_center">16 (6.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">6</td>
+<td class="gt_row gt_center">3 (1.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">11</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Connaissez-vous la planification familiale?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">160 (61%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">104 (39%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">8</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avevez-vous déjà utilisé une méthode de planification?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">60 (38%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">97 (62%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">115</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">methode_planing1</td>
+<td class="gt_row gt_center">10 (17%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">214</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">methode_planing2</td>
+<td class="gt_row gt_center">36 (62%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">214</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">methode_planing3</td>
+<td class="gt_row gt_center">6 (10%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">214</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">methode_planing4</td>
+<td class="gt_row gt_center">2 (3.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">214</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">methode_planing5</td>
+<td class="gt_row gt_center">5 (8.6%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">214</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage1</td>
+<td class="gt_row gt_center">193 (73%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage2</td>
+<td class="gt_row gt_center">159 (60%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage3</td>
+<td class="gt_row gt_center">135 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage4</td>
+<td class="gt_row gt_center">134 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage5</td>
+<td class="gt_row gt_center">136 (52%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage6</td>
+<td class="gt_row gt_center">240 (91%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">moment_lavage7</td>
+<td class="gt_row gt_center">16 (6.1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">9</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre moment</td>
+<td class="gt_row gt_center">NA  (NA)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">272</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quelle est votre principale source d'eau pour la boisson?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Puits</td>
+<td class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Source non  protégé</td>
+<td class="gt_row gt_center">33 (12%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Source Protégée</td>
+<td class="gt_row gt_center">21 (7.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Robinet Privé</td>
+<td class="gt_row gt_center">13 (4.8%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Robinet Public</td>
+<td class="gt_row gt_center">196 (73%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rivière</td>
+<td class="gt_row gt_center">5 (1.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Lac</td>
+<td class="gt_row gt_center">0 (0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">3</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Combien de minutes faites-vous aller et retour pour puiser?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Moyenne  (ET)</td>
+<td class="gt_row gt_center">29  (40)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">6</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Traitez-vous de l'eau?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">36 (14%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">229 (86%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">7</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous de latrine?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Oui</td>
+<td class="gt_row gt_center">229 (87%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Non</td>
+<td class="gt_row gt_center">35 (13%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">8</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Quel type de latrine?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Privée</td>
+<td class="gt_row gt_center">192 (75%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Latrine partagée</td>
+<td class="gt_row gt_center">58 (23%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">5 (2.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">17</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre type</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">268 (99%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Chez le voisin</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Voisin</td>
+<td class="gt_row gt_center">2 (0.7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Avez-vous une poubelle?</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">À ciel ouvert</td>
+<td class="gt_row gt_center">116 (43%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Avec couvercle</td>
+<td class="gt_row gt_center">8 (3.0%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas de couvercle</td>
+<td class="gt_row gt_center">53 (20%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pas de pubelle</td>
+<td class="gt_row gt_center">88 (33%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Autres(à spécifier)</td>
+<td class="gt_row gt_center">5 (1.9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Manquant</td>
+<td class="gt_row gt_center">2</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Autre type</td>
+<td class="gt_row gt_center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"></td>
+<td class="gt_row gt_center">269 (99%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Public</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sac Ã  poubelle</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Strou creusÃ©</td>
+<td class="gt_row gt_center">1 (0.4%)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-parts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1157 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche},
+  pdfauthor={Dr Lucien Bindu},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{Malnutrition des enfants en âge scolaire dans la zone de santé de Kirotche}
+\author{Dr Lucien Bindu}
+\date{2021-10-04}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{about}{%
+\chapter{About}\label{about}}
+
+ce site est produit dans le cadre des analyses des données pour la rédaction du mémoire de master pour le troisème cycle en danté public
+
+`
+
+\hypertarget{presentation-des-donnuxe9es}{%
+\chapter{Presentation des données}\label{presentation-des-donnuxe9es}}
+
+Les donnés traités dans cette partie ont été récolté dur terrain par enquete dans la zone de santé de Kirotshe. au mois de septembre
+
+\begin{verbatim}
+## <labelled<double>[10]>: Sexe de l'enfant
+##  [1] 1 1 1 1 1 2 1 2 1 1
+## 
+## Labels:
+##  value    label
+##      1 Masculin
+##      2  Féminin
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{describe}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{statut\_matrimonial)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [272 obs.] statut matrimonial de la mère
+## labelled double: 2 5 5 1 2 2 4 2 2 2 ...
+## min: 1 - max: 5 - NAs: 3 (1.1%) - 6 unique values
+## 5 value labels: [1] Célibataire [2] Marié [3] Divorcé [4] veuve [5] séparé
+## 
+##                   n     %  val%
+## [1] Célibataire   4   1.5   1.5
+## [2] Marié       222  81.6  82.5
+## [3] Divorcé       5   1.8   1.9
+## [4] veuve        23   8.5   8.6
+## [5] séparé       15   5.5   5.6
+## NA                3   1.1    NA
+## Total           272 100.0 100.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df }\OtherTok{\textless{}{-}}\NormalTok{ df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{type\_vaccin,}\SpecialCharTok{{-}}\NormalTok{methode\_planing,}\SpecialCharTok{{-}}\NormalTok{moment\_lavage)}
+\end{Highlighting}
+\end{Shaded}
+
+Voici le tri à plat de la base des données, montrant les tendances générales pour toutes les variables d'étude.
+
+\begin{verbatim}
+## Table printed with `knitr::kable()`, not {gt}. Learn why at
+## http://www.danieldsjoberg.com/gtsummary/articles/rmarkdown.html
+## To suppress this message, include `message = FALSE` in code chunk header.
+\end{verbatim}
+
+\begin{tabular}{l|l}
+\hline
+**Variables d'étude** & **N = 272**\\
+\hline
+\_\_Numéro de la fiche\_\_ & \\
+\hline
+Moyenne  (ET) & 136  (79)\\
+\hline
+\_\_Adresse permanente(Village)\_\_ & \\
+\hline
+Birere & 2 (0.7\%)\\
+\hline
+BIRERE & 9 (3.3\%)\\
+\hline
+BISHANGE BURONG9 & 1 (0.4\%)\\
+\hline
+BISHANGE BURONGO & 4 (1.5\%)\\
+\hline
+BISHANGE BUSAKABA & 1 (0.4\%)\\
+\hline
+BISHANGE BUSAKARA & 4 (1.5\%)\\
+\hline
+BISHANGE CENTRE & 4 (1.5\%)\\
+\hline
+BULENGERO & 8 (2.9\%)\\
+\hline
+BURONGO & 1 (0.4\%)\\
+\hline
+BUSAKARA & 5 (1.8\%)\\
+\hline
+BUSHEKA & 3 (1.1\%)\\
+\hline
+BUSHUHE & 10 (3.7\%)\\
+\hline
+Kaduki & 2 (0.7\%)\\
+\hline
+KADUKI & 4 (1.5\%)\\
+\hline
+KADUKI STADE & 7 (2.6\%)\\
+\hline
+KAFEMBE & 1 (0.4\%)\\
+\hline
+KAMBA & 9 (3.3\%)\\
+\hline
+KARUBA & 1 (0.4\%)\\
+\hline
+KASHAKI MISHAVU & 1 (0.4\%)\\
+\hline
+KASURA & 9 (3.3\%)\\
+\hline
+KASURA/KAKOMERO & 1 (0.4\%)\\
+\hline
+KATEMBE & 7 (2.6\%)\\
+\hline
+KIBONDE & 10 (3.7\%)\\
+\hline
+KIDHWATI & 1 (0.4\%)\\
+\hline
+KING\_KAHIRA & 1 (0.4\%)\\
+\hline
+KINGI BUROHA & 1 (0.4\%)\\
+\hline
+KINGI KAHIRA & 13 (4.8\%)\\
+\hline
+KINGI\_KAHIRA & 5 (1.8\%)\\
+\hline
+Kishusha & 1 (0.4\%)\\
+\hline
+KISHWATI & 9 (3.3\%)\\
+\hline
+KISHWATSI & 4 (1.5\%)\\
+\hline
+KIZHWATI & 1 (0.4\%)\\
+\hline
+LULOBOGO & 1 (0.4\%)\\
+\hline
+MAJAGI & 1 (0.4\%)\\
+\hline
+MANYUTSA & 1 (0.4\%)\\
+\hline
+MANYUTSA I & 1 (0.4\%)\\
+\hline
+MATONGE & 4 (1.5\%)\\
+\hline
+MATUTSA I & 3 (1.1\%)\\
+\hline
+MAYUTSA & 5 (1.8\%)\\
+\hline
+MAYUTSA I & 7 (2.6\%)\\
+\hline
+MISHAVU & 6 (2.2\%)\\
+\hline
+Mitumbala & 3 (1.1\%)\\
+\hline
+MITUMBALA & 3 (1.1\%)\\
+\hline
+MONIMA & 1 (0.4\%)\\
+\hline
+MONUMENT & 2 (0.7\%)\\
+\hline
+MOSQUE & 10 (3.7\%)\\
+\hline
+MTUMBALA CENTRE & 8 (2.9\%)\\
+\hline
+MTUMBALA KAYIRENGE & 2 (0.7\%)\\
+\hline
+MTUMBALA MATOYE & 1 (0.4\%)\\
+\hline
+MUSHUNUNU & 4 (1.5\%)\\
+\hline
+MUSHUNUNU 1 & 1 (0.4\%)\\
+\hline
+MUSHWATI & 1 (0.4\%)\\
+\hline
+MUSHWATSI & 1 (0.4\%)\\
+\hline
+MUTUMBALA & 1 (0.4\%)\\
+\hline
+MUYUTSA I & 4 (1.5\%)\\
+\hline
+Ndobogo & 1 (0.4\%)\\
+\hline
+NDOBOGO & 1 (0.4\%)\\
+\hline
+RUSHOGA & 18 (6.6\%)\\
+\hline
+SHASHA 1 & 15 (5.5\%)\\
+\hline
+SHASHA 2 & 14 (5.1\%)\\
+\hline
+TWEGERANE & 11 (4.0\%)\\
+\hline
+TWIGERANE & 1 (0.4\%)\\
+\hline
+\_\_Aire de santé où se trouve le village\_\_ & \\
+\hline
+2 & 1 (0.4\%)\\
+\hline
+BIROHA KINGI & 1 (0.4\%)\\
+\hline
+BISHANGE & 11 (4.0\%)\\
+\hline
+BUHORA\_KINGI & 1 (0.4\%)\\
+\hline
+BULENGERA & 3 (1.1\%)\\
+\hline
+BULENGERO & 27 (9.9\%)\\
+\hline
+BUROHA-KINGI & 2 (0.7\%)\\
+\hline
+BUROHA KAHIR & 1 (0.4\%)\\
+\hline
+BUROHA KINGI & 12 (4.4\%)\\
+\hline
+BUSHUHE & 17 (6.2\%)\\
+\hline
+C S BISHANGE & 1 (0.4\%)\\
+\hline
+C.S BISHANGE & 8 (2.9\%)\\
+\hline
+C.S BUSHUHE & 3 (1.1\%)\\
+\hline
+Kaduki & 4 (1.5\%)\\
+\hline
+KADUKI & 25 (9.2\%)\\
+\hline
+KARUBA & 25 (9.2\%)\\
+\hline
+KASURA & 17 (6.2\%)\\
+\hline
+KAUBA & 1 (0.4\%)\\
+\hline
+KIDHWATI MUSHAKI & 1 (0.4\%)\\
+\hline
+KISHWATI MUSHAKI & 4 (1.5\%)\\
+\hline
+Mitumbala & 2 (0.7\%)\\
+\hline
+MITUMBALA & 6 (2.2\%)\\
+\hline
+MSHUNUNU MUSHAKI & 1 (0.4\%)\\
+\hline
+MTUMBALA & 14 (5.1\%)\\
+\hline
+MTUMBULA & 1 (0.4\%)\\
+\hline
+Mushaki & 2 (0.7\%)\\
+\hline
+MUSHAKI & 15 (5.5\%)\\
+\hline
+MUSHAKI MUSHUNUNU & 2 (0.7\%)\\
+\hline
+MUTUMBALA & 1 (0.4\%)\\
+\hline
+RUHOHA & 1 (0.4\%)\\
+\hline
+RUHOHA\_KAHIRA & 1 (0.4\%)\\
+\hline
+RUHORA\_KAHIRA & 1 (0.4\%)\\
+\hline
+SAKE & 30 (11\%)\\
+\hline
+SHASHA & 30 (11\%)\\
+\hline
+\_\_statut matrimonial de la mère\_\_ & \\
+\hline
+Célibataire & 4 (1.5\%)\\
+\hline
+Marié & 222 (83\%)\\
+\hline
+Divorcé & 5 (1.9\%)\\
+\hline
+veuve & 23 (8.6\%)\\
+\hline
+séparé & 15 (5.6\%)\\
+\hline
+Manquant & 3\\
+\hline
+\_\_Taille du ménage\_\_ & \\
+\hline
+Moyenne  (ET) & 8.13  (7.91)\\
+\hline
+Manquant & 5\\
+\hline
+\_\_Combien d'enfants d'âge scolaire(Primaires) avez-vous?\_\_ & \\
+\hline
+1 & 68 (25\%)\\
+\hline
+2 & 88 (33\%)\\
+\hline
+3 & 67 (25\%)\\
+\hline
+4 & 29 (11\%)\\
+\hline
+5 & 10 (3.7\%)\\
+\hline
+6 & 4 (1.5\%)\\
+\hline
+7 & 3 (1.1\%)\\
+\hline
+43 & 1 (0.4\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_Avez-vous dejà été à l'école?\_\_ & \\
+\hline
+Oui & 161 (60\%)\\
+\hline
+Non & 107 (40\%)\\
+\hline
+Manquant & 4\\
+\hline
+\_\_Si oui quel niveau d'étude avez-vous?\_\_ & \\
+\hline
+Primaire & 93 (59\%)\\
+\hline
+Secondaire & 62 (39\%)\\
+\hline
+Universitaire & 3 (1.9\%)\\
+\hline
+Autre & 0 (0\%)\\
+\hline
+Manquant & 114\\
+\hline
+\_\_Autre\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_Quelle est l'occupation de la mère?\_\_ & \\
+\hline
+Ménagère & 49 (18\%)\\
+\hline
+Commerçante & 66 (25\%)\\
+\hline
+Employé à une ONG & 2 (0.7\%)\\
+\hline
+Cultivatrice & 136 (51\%)\\
+\hline
+Emplpoyée de l'Etat & 9 (3.3\%)\\
+\hline
+Autre & 7 (2.6\%)\\
+\hline
+Manquant & 3\\
+\hline
+\_\_Autre\_\_ & \\
+\hline
+ & 271 (100\%)\\
+\hline
+Tailleur & 1 (0.4\%)\\
+\hline
+\_\_Quelle est l'occupation du père?\_\_ & \\
+\hline
+Ménagère & 11 (4.5\%)\\
+\hline
+Commerçante & 19 (7.7\%)\\
+\hline
+Employé à une ONG & 5 (2.0\%)\\
+\hline
+Cultivatrice & 117 (47\%)\\
+\hline
+Emplpoyée de l'Etat & 43 (17\%)\\
+\hline
+Autre & 52 (21\%)\\
+\hline
+Manquant & 25\\
+\hline
+\_\_Autre\_\_ & \\
+\hline
+ & 250 (92\%)\\
+\hline
+Ã‰leveu & 1 (0.4\%)\\
+\hline
+Chauffeur & 1 (0.4\%)\\
+\hline
+DivorcÃ© & 1 (0.4\%)\\
+\hline
+Militaire & 1 (0.4\%)\\
+\hline
+Motard & 11 (4.0\%)\\
+\hline
+MOTARD & 1 (0.4\%)\\
+\hline
+RAS & 1 (0.4\%)\\
+\hline
+Sciere & 2 (0.7\%)\\
+\hline
+Scieur & 2 (0.7\%)\\
+\hline
+Tailleur & 1 (0.4\%)\\
+\hline
+\_\_Quelles sont les habitudes alides alimentaires pendant la grossesse\_\_ & \\
+\hline
+Monotone & 44 (16\%)\\
+\hline
+Multivarié & 226 (83\%)\\
+\hline
+Autre & 1 (0.4\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_Autre habitude\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_Quels sont les interdits alimentaires de la mère pendant la grossessse\_\_ & \\
+\hline
+ & 129 (47\%)\\
+\hline
+Å’UFS & 1 (0.4\%)\\
+\hline
+Ã€ SIGNALER & 4 (1.5\%)\\
+\hline
+ALIMENTS AROMANTIQUES & 1 (0.4\%)\\
+\hline
+Aucun & 26 (9.6\%)\\
+\hline
+Aucune & 4 (1.5\%)\\
+\hline
+Choux et Avocat & 1 (0.4\%)\\
+\hline
+Feuille de manioc et patate douce & 1 (0.4\%)\\
+\hline
+Haricot & 1 (0.4\%)\\
+\hline
+Haricot patate douce & 1 (0.4\%)\\
+\hline
+Haricots frai & 1 (0.4\%)\\
+\hline
+L'huile & 1 (0.4\%)\\
+\hline
+La patte, pomme de terre & 1 (0.4\%)\\
+\hline
+Les haricots & 2 (0.7\%)\\
+\hline
+Oeufs & 1 (0.4\%)\\
+\hline
+Pad d'interdits & 1 (0.4\%)\\
+\hline
+Parfait & 1 (0.4\%)\\
+\hline
+Pas & 42 (15\%)\\
+\hline
+Pas d'interdits & 17 (6.2\%)\\
+\hline
+Pas des interdits & 2 (0.7\%)\\
+\hline
+Pas les interdits alimentaires & 1 (0.4\%)\\
+\hline
+Patate  douce & 1 (0.4\%)\\
+\hline
+Patate douce & 1 (0.4\%)\\
+\hline
+Plusieures & 1 (0.4\%)\\
+\hline
+Poisson, viande & 1 (0.4\%)\\
+\hline
+R A S & 1 (0.4\%)\\
+\hline
+R.A.S & 1 (0.4\%)\\
+\hline
+Rien & 17 (6.2\%)\\
+\hline
+RIEN & 1 (0.4\%)\\
+\hline
+Rien Ã  signaler & 1 (0.4\%)\\
+\hline
+RIEN Ã€ SIGALER & 1 (0.4\%)\\
+\hline
+Riz & 2 (0.7\%)\\
+\hline
+RIZ, FARINE DE MAÃS & 1 (0.4\%)\\
+\hline
+Serpent & 1 (0.4\%)\\
+\hline
+Sombe, foufou & 1 (0.4\%)\\
+\hline
+Viande & 1 (0.4\%)\\
+\hline
+Viande de mouton & 1 (0.4\%)\\
+\hline
+\_\_Etes-vous un déplacé dans ce village de moins de 2 ans\_\_ & \\
+\hline
+Oui & 37 (14\%)\\
+\hline
+Non & 232 (86\%)\\
+\hline
+Manquant & 3\\
+\hline
+\_\_Quelles sont les causes de votre déplacement?\_\_ & \\
+\hline
+Guerre & 27 (82\%)\\
+\hline
+Aute & 6 (18\%)\\
+\hline
+Manquant & 239\\
+\hline
+\_\_Autre cause\_\_ & \\
+\hline
+ & 271 (100\%)\\
+\hline
+Violence & 1 (0.4\%)\\
+\hline
+\_\_Âge de l'enfant(mois)\_\_ & \\
+\hline
+Moyenne  (ET) & 89  (35)\\
+\hline
+Manquant & 4\\
+\hline
+\_\_Sexe de l'enfant\_\_ & \\
+\hline
+Masculin & 130 (48\%)\\
+\hline
+Féminin & 140 (52\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_Lieu où s'est déroulé l'acouchement\_\_ & \\
+\hline
+à domicile & 31 (13\%)\\
+\hline
+FOSA & 205 (86\%)\\
+\hline
+Autres(à spécifier) & 1 (0.4\%)\\
+\hline
+Manquant & 35\\
+\hline
+\_\_taille\_enfant\_\_ & \\
+\hline
+Moyenne  (ET) & 124  (102)\\
+\hline
+Manquant & 10\\
+\hline
+\_\_poids\_enfant\_\_ & \\
+\hline
+Moyenne  (ET) & 24  (21)\\
+\hline
+Manquant & 4\\
+\hline
+\_\_perimetre\_enfant\_\_ & \\
+\hline
+Moyenne  (ET) & 305  (448)\\
+\hline
+Manquant & 15\\
+\hline
+\_\_Age gestationnel à l'acouchement\_\_ & \\
+\hline
+<9 mois & 11 (4.0\%)\\
+\hline
+9 mois & 227 (83\%)\\
+\hline
+>9mois & 29 (11\%)\\
+\hline
+Ne sait pas & 5 (1.8\%)\\
+\hline
+\_\_Votre enfant a-t-il été pésé à la naissance?\_\_ & \\
+\hline
+Oui & 192 (72\%)\\
+\hline
+Non & 75 (28\%)\\
+\hline
+Manquant & 5\\
+\hline
+\_\_poids\_enfant\_naissance\_\_ & \\
+\hline
+Moyenne  (ET) & 2,770  (1,625)\\
+\hline
+Manquant & 109\\
+\hline
+\_\_Votre enfant est-il vacciné?\_\_ & \\
+\hline
+Oui & 262 (97\%)\\
+\hline
+Non & 8 (3.0\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_type\_vaccin1\_\_ & 218 (88\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_type\_vaccin2\_\_ & 219 (88\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_type\_vaccin3\_\_ & 210 (84\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_type\_vaccin4\_\_ & 211 (85\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_type\_vaccin5\_\_ & 119 (48\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_type\_vaccin6\_\_ & 17 (6.8\%)\\
+\hline
+Manquant & 23\\
+\hline
+\_\_Autre type de vaccin\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_L'enfant a-t-il été supplémenté en vitamine A?\_\_ & \\
+\hline
+Oui & 253 (93\%)\\
+\hline
+Non & 18 (6.6\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_L'enfant a-t-il eu la fièvre durant les 6mois?\_\_ & \\
+\hline
+Oui & 133 (49\%)\\
+\hline
+Non & 139 (51\%)\\
+\hline
+\_\_l'enfant a-t-il eu une IRA durant les 6 mois passés?\_\_ & \\
+\hline
+Oui & 116 (43\%)\\
+\hline
+Non & 152 (57\%)\\
+\hline
+Manquant & 4\\
+\hline
+\_\_l'enfant a-t-il eu la rougeole l'année passée?\_\_ & \\
+\hline
+Oui & 10 (3.7\%)\\
+\hline
+Non & 262 (96\%)\\
+\hline
+\_\_L'enfant a-t-il eu des Oeudèmes?\_\_ & \\
+\hline
+Oui & 11 (4.1\%)\\
+\hline
+Non & 259 (96\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_L'enfant a-t-il fait la diarrhée les 6mois passés?\_\_ & \\
+\hline
+Oui & 43 (16\%)\\
+\hline
+Non & 228 (84\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_qui était consulté en premier lieu quand l'enfant tombe malade?\_\_ & \\
+\hline
+La FOSA & 215 (81\%)\\
+\hline
+Tradi Praticien & 27 (10\%)\\
+\hline
+Autre & 22 (8.3\%)\\
+\hline
+Manquant & 8\\
+\hline
+\_\_Autre\_\_ & \\
+\hline
+ & 256 (94\%)\\
+\hline
+Ã€ domicile & 1 (0.4\%)\\
+\hline
+Chambre de priÃ¨re & 1 (0.4\%)\\
+\hline
+Domicile & 1 (0.4\%)\\
+\hline
+Pharmacie & 11 (4.0\%)\\
+\hline
+TÂ³ Ã  domicile & 1 (0.4\%)\\
+\hline
+Traitement Ã  domicile & 1 (0.4\%)\\
+\hline
+\_\_Combien de repas que l'enfant mange par jour?\_\_ & \\
+\hline
+3 fois & 35 (13\%)\\
+\hline
+2 fois & 195 (73\%)\\
+\hline
+1 fois & 36 (14\%)\\
+\hline
+Manquant & 6\\
+\hline
+\_\_Combien de fois que l'enfant prend des fruits par semaine?\_\_ & \\
+\hline
+Chaque jour & 22 (8.2\%)\\
+\hline
+Une fois & 68 (25\%)\\
+\hline
+Aucune & 179 (67\%)\\
+\hline
+Manquant & 3\\
+\hline
+\_\_L'enfant reçoit-il une collation quand il va à l'école?\_\_ & \\
+\hline
+Oui & 35 (13\%)\\
+\hline
+Non & 232 (87\%)\\
+\hline
+Manquant & 5\\
+\hline
+\_\_espace\_enfant\_aine\_\_ & \\
+\hline
+Moyenne  (ET) & 7  (10)\\
+\hline
+Manquant & 61\\
+\hline
+\_\_Avez-vous allaité l'enfant après acouchement?\_\_ & \\
+\hline
+Oui & 269 (99\%)\\
+\hline
+Non & 3 (1.1\%)\\
+\hline
+\_\_Sinon quelles sont les raisons?\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_Après combien de temps de l'acouchement avez-vous mis l'enfant au sein?\_\_ & \\
+\hline
+Dans 30 min & 223 (84\%)\\
+\hline
+Dans 1 heure & 32 (12\%)\\
+\hline
+Dans 24 heures & 11 (4.1\%)\\
+\hline
+Manquant & 6\\
+\hline
+\_\_Avez-vous donné un autre aliment/ liquide autre que le lait maternel avant 6mois?\_\_ & \\
+\hline
+Oui & 66 (24\%)\\
+\hline
+Non & 205 (76\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_Si oui quel type de repas avez-vous donné??\_\_ & \\
+\hline
+L'eau & 19 (31\%)\\
+\hline
+Autre lait que le lait maternel & 4 (6.6\%)\\
+\hline
+Bouillie & 36 (59\%)\\
+\hline
+Autres(à spécifier) & 2 (3.3\%)\\
+\hline
+Manquant & 211\\
+\hline
+\_\_Avez-vous pressé et jeter le premier lait maternel?\_\_ & \\
+\hline
+Oui & 21 (7.7\%)\\
+\hline
+Non & 250 (92\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_Si oui quelles sont les raisons?\_\_ & \\
+\hline
+Sale & 8 (73\%)\\
+\hline
+Crée des douleurs abdominales & 1 (9.1\%)\\
+\hline
+Autres(à spécifier) & 2 (18\%)\\
+\hline
+Manquant & 261\\
+\hline
+\_\_Autre\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_Continuez-vous à allaiter après l'acouchement?\_\_ & \\
+\hline
+Oui & 235 (87\%)\\
+\hline
+Non & 36 (13\%)\\
+\hline
+Manquant & 1\\
+\hline
+\_\_Combien de temps allaitez-vous  dans 24h après l'acouchement?\_\_ & \\
+\hline
+Moyenne  (ET) & 14  (14)\\
+\hline
+Manquant & 102\\
+\hline
+\_\_Combien de mois avez-vous exclusivement allaité?\_\_ & \\
+\hline
+Moyenne  (ET) & 8  (6)\\
+\hline
+Manquant & 33\\
+\hline
+\_\_Combien de mois avez-vous  allaité l'enfant?\_\_ & \\
+\hline
+Moyenne  (ET) & 20  (10)\\
+\hline
+Manquant & 19\\
+\hline
+\_\_Qui a l'habitude de s'occuper de l'enfant?\_\_ & \\
+\hline
+Mère & 199 (74\%)\\
+\hline
+sœur & 40 (15\%)\\
+\hline
+Grand-mère & 14 (5.2\%)\\
+\hline
+Berceuse & 10 (3.7\%)\\
+\hline
+Autres(à spécifier) & 7 (2.6\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_Age de la mère\_\_ & \\
+\hline
+Moyenne  (ET) & 33  (7)\\
+\hline
+Manquant & 5\\
+\hline
+\_\_Âge à la première grossesse\_\_ & \\
+\hline
+Moyenne  (ET) & 17.98  (3.25)\\
+\hline
+Manquant & 17\\
+\hline
+\_\_Quelles est la parité(Nombre de grossesses\_\_ & \\
+\hline
+Moyenne  (ET) & 6.45  (2.60)\\
+\hline
+Manquant & 26\\
+\hline
+\_\_Avez-vous fait la CPN?\_\_ & \\
+\hline
+Oui & 260 (96\%)\\
+\hline
+Non & 10 (3.7\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_Si oui au quantième mois de grossesse avez-vous commencé ?\_\_ & \\
+\hline
+3 & 79 (31\%)\\
+\hline
+4 & 87 (34\%)\\
+\hline
+5 & 40 (16\%)\\
+\hline
+6 & 21 (8.2\%)\\
+\hline
+7 & 25 (9.8\%)\\
+\hline
+8 & 1 (0.4\%)\\
+\hline
+9 & 1 (0.4\%)\\
+\hline
+16 & 1 (0.4\%)\\
+\hline
+27 & 1 (0.4\%)\\
+\hline
+Manquant & 16\\
+\hline
+\_\_Combien de fois vous visitez les services CPN durant la grossesse?\_\_ & \\
+\hline
+1 & 17 (6.5\%)\\
+\hline
+2 & 31 (12\%)\\
+\hline
+3 & 63 (24\%)\\
+\hline
+4 & 131 (50\%)\\
+\hline
+5 & 16 (6.1\%)\\
+\hline
+6 & 3 (1.1\%)\\
+\hline
+Manquant & 11\\
+\hline
+\_\_Connaissez-vous la planification familiale?\_\_ & \\
+\hline
+Oui & 160 (61\%)\\
+\hline
+Non & 104 (39\%)\\
+\hline
+Manquant & 8\\
+\hline
+\_\_Avevez-vous déjà utilisé une méthode de planification?\_\_ & \\
+\hline
+Oui & 60 (38\%)\\
+\hline
+Non & 97 (62\%)\\
+\hline
+Manquant & 115\\
+\hline
+\_\_methode\_planing1\_\_ & 10 (17\%)\\
+\hline
+Manquant & 214\\
+\hline
+\_\_methode\_planing2\_\_ & 36 (62\%)\\
+\hline
+Manquant & 214\\
+\hline
+\_\_methode\_planing3\_\_ & 6 (10\%)\\
+\hline
+Manquant & 214\\
+\hline
+\_\_methode\_planing4\_\_ & 2 (3.4\%)\\
+\hline
+Manquant & 214\\
+\hline
+\_\_methode\_planing5\_\_ & 5 (8.6\%)\\
+\hline
+Manquant & 214\\
+\hline
+\_\_moment\_lavage1\_\_ & 193 (73\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage2\_\_ & 159 (60\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage3\_\_ & 135 (51\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage4\_\_ & 134 (51\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage5\_\_ & 136 (52\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage6\_\_ & 240 (91\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_moment\_lavage7\_\_ & 16 (6.1\%)\\
+\hline
+Manquant & 9\\
+\hline
+\_\_Autre moment\_\_ & NA  (NA)\\
+\hline
+Manquant & 272\\
+\hline
+\_\_Quelle est votre principale source d'eau pour la boisson?\_\_ & \\
+\hline
+Puits & 0 (0\%)\\
+\hline
+Source non  protégé & 33 (12\%)\\
+\hline
+Source Protégée & 21 (7.8\%)\\
+\hline
+Robinet Privé & 13 (4.8\%)\\
+\hline
+Robinet Public & 196 (73\%)\\
+\hline
+Rivière & 5 (1.9\%)\\
+\hline
+Lac & 0 (0\%)\\
+\hline
+Autres(à spécifier) & 1 (0.4\%)\\
+\hline
+Manquant & 3\\
+\hline
+\_\_Combien de minutes faites-vous aller et retour pour puiser?\_\_ & \\
+\hline
+Moyenne  (ET) & 29  (40)\\
+\hline
+Manquant & 6\\
+\hline
+\_\_Traitez-vous de l'eau?\_\_ & \\
+\hline
+Oui & 36 (14\%)\\
+\hline
+Non & 229 (86\%)\\
+\hline
+Manquant & 7\\
+\hline
+\_\_Avez-vous de latrine?\_\_ & \\
+\hline
+Oui & 229 (87\%)\\
+\hline
+Non & 35 (13\%)\\
+\hline
+Manquant & 8\\
+\hline
+\_\_Quel type de latrine?\_\_ & \\
+\hline
+Privée & 192 (75\%)\\
+\hline
+Latrine partagée & 58 (23\%)\\
+\hline
+Autres(à spécifier) & 5 (2.0\%)\\
+\hline
+Manquant & 17\\
+\hline
+\_\_Autre type\_\_ & \\
+\hline
+ & 268 (99\%)\\
+\hline
+Chez le voisin & 2 (0.7\%)\\
+\hline
+Voisin & 2 (0.7\%)\\
+\hline
+\_\_Avez-vous une poubelle?\_\_ & \\
+\hline
+À ciel ouvert & 116 (43\%)\\
+\hline
+Avec couvercle & 8 (3.0\%)\\
+\hline
+Pas de couvercle & 53 (20\%)\\
+\hline
+Pas de pubelle & 88 (33\%)\\
+\hline
+Autres(à spécifier) & 5 (1.9\%)\\
+\hline
+Manquant & 2\\
+\hline
+\_\_Autre type\_\_ & \\
+\hline
+ & 269 (99\%)\\
+\hline
+Public & 1 (0.4\%)\\
+\hline
+Sac Ã  poubelle & 1 (0.4\%)\\
+\hline
+Strou creusÃ© & 1 (0.4\%)\\
+\hline
+\end{tabular}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

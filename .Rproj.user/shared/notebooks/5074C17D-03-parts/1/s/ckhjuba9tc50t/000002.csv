@@ -1,0 +1,6 @@
+"0","theme_gtsummary_language(language = ""fr"",set_theme = T)"
+"2","Setting theme `language: fr`
+"
+"0","theme_gtsummary_mean_sd(set_theme =T)"
+"0","theme_gtsummary_continuous2(statistic = ""{mean}  ({sd})"")"
+"0",""

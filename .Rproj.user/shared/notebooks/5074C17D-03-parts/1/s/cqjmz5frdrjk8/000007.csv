@@ -1,0 +1,8 @@
+"0","df$etre_ecole %>% describe()
+"
+"1","[272 obs.] Avez-vous dejà été à l'école?
+nominal factor: ""Oui"" ""Oui"" ""Oui"" ""Oui"" ""Non"" ""Oui"" ""Non"" ""Non"" NA ""Non"" ...
+2 levels: Oui | Non
+NAs: 4 (1.5%)
+
+"
