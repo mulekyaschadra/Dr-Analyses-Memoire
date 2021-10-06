@@ -1,8 +1,0 @@
-"0","describe(df$statut_matrimonial)
-"
-"1","[272 obs.] statut matrimonial de la mère
-labelled double: 2 5 5 1 2 2 4 2 2 2 ...
-min: 1 - max: 5 - NAs: 3 (1.1%) - 6 unique values
-5 value labels: [1] Célibataire [2] Marié [3] Divorcé [4] veuve [5] séparé
-
-"

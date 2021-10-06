@@ -9,6 +9,9 @@ library(questionr)
 library(foreign)
 library(haven)
 library(labelled)
+library(knitr)
+library(tm)
+library(tidytext)
 ```
 
 
@@ -45,9 +48,7 @@ class(df$sexe_enfant)
 ```{r echo=FALSE}
 head(df$sexe_enfant,10)
 ```
-```{r}
-describe(df$statut_matrimonial)
-```
+
 ```{r echo=FALSE,include=FALSE}
 val_labels(df$statut_matrimonial)
 is.numeric(df$statut_matrimonial)
@@ -55,15 +56,17 @@ class(df$sexe_enfant)
 df$sexe_enfant %>% table()
 class(df$etre_ecole)
 df$etre_ecole <- df$etre_ecole %>% labelled::to_factor()
-df$etre_ecole %>% describe()
+
 
 
 
 df <- df %>% mutate_if(is.labelled,to_factor)
+class(df)
+
 ```
 
 ```{r echo=FALSE,include=FALSE}
-describe(df$statut_matrimonial)
+
 typeof(df$statut_matrimonial)
 ```
 
@@ -89,5 +92,8 @@ df %>% tbl_summary() %>%
   modify_header(label="**Variables d'étude**") %>% bold_labels()
 ```
 
+```{r}
+df$interdit_alimentaire %>% str_to_lower()
+```
 
 

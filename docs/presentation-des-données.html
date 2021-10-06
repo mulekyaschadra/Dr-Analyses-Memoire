@@ -24,7 +24,7 @@
 <meta name="author" content="Dr Lucien Bindu" />
 
 
-<meta name="date" content="2021-10-04" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-
+<link rel="next" href="analyse-des-données.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -139,6 +139,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
 <li class="chapter" data-level="2" data-path="presentation-des-données.html"><a href="presentation-des-données.html"><i class="fa fa-check"></i><b>2</b> Presentation des données</a></li>
+<li class="chapter" data-level="3" data-path="analyse-des-données.html"><a href="analyse-des-données.html"><i class="fa fa-check"></i><b>3</b> Analyse des données</a></li>
+<li class="chapter" data-level="4" data-path="caractéristiques-des-parents.html"><a href="caractéristiques-des-parents.html"><i class="fa fa-check"></i><b>4</b> Caractéristiques des parents</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="caractéristiques-des-parents.html"><a href="caractéristiques-des-parents.html#les-caractéristiques-de-lenfant"><i class="fa fa-check"></i><b>4.1</b> Les caractéristiques de l’enfant</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -169,28 +174,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  value    label
 ##      1 Masculin
 ##      2  Féminin</code></pre>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="presentation-des-données.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(df<span class="sc">$</span>statut_matrimonial)</span></code></pre></div>
-<pre><code>## [272 obs.] statut matrimonial de la mère
-## labelled double: 2 5 5 1 2 2 4 2 2 2 ...
-## min: 1 - max: 5 - NAs: 3 (1.1%) - 6 unique values
-## 5 value labels: [1] Célibataire [2] Marié [3] Divorcé [4] veuve [5] séparé
-## 
-##                   n     %  val%
-## [1] Célibataire   4   1.5   1.5
-## [2] Marié       222  81.6  82.5
-## [3] Divorcé       5   1.8   1.9
-## [4] veuve        23   8.5   8.6
-## [5] séparé       15   5.5   5.6
-## NA                3   1.1    NA
-## Total           272 100.0 100.0</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="presentation-des-données.html#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>type_vaccin,<span class="sc">-</span>methode_planing,<span class="sc">-</span>moment_lavage)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="presentation-des-données.html#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>type_vaccin,<span class="sc">-</span>methode_planing,<span class="sc">-</span>moment_lavage)</span></code></pre></div>
 <p>Voici le tri à plat de la base des données, montrant les tendances générales pour toutes les variables d’étude.</p>
-<div id="nshjgoctfq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="qzaszhqzbd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nshjgoctfq .gt_table {
+#qzaszhqzbd .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -215,7 +206,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-left-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_heading {
+#qzaszhqzbd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -227,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_title {
+#qzaszhqzbd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -237,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-width: 0;
 }
 
-#nshjgoctfq .gt_subtitle {
+#qzaszhqzbd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -247,13 +238,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-width: 0;
 }
 
-#nshjgoctfq .gt_bottom_border {
+#qzaszhqzbd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_col_headings {
+#qzaszhqzbd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -268,7 +259,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_col_heading {
+#qzaszhqzbd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -288,7 +279,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#nshjgoctfq .gt_column_spanner_outer {
+#qzaszhqzbd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -300,15 +291,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 4px;
 }
 
-#nshjgoctfq .gt_column_spanner_outer:first-child {
+#qzaszhqzbd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nshjgoctfq .gt_column_spanner_outer:last-child {
+#qzaszhqzbd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nshjgoctfq .gt_column_spanner {
+#qzaszhqzbd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -320,7 +311,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   width: 100%;
 }
 
-#nshjgoctfq .gt_group_heading {
+#qzaszhqzbd .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -342,7 +333,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#nshjgoctfq .gt_empty_group_heading {
+#qzaszhqzbd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -357,15 +348,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#nshjgoctfq .gt_from_md > :first-child {
+#qzaszhqzbd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nshjgoctfq .gt_from_md > :last-child {
+#qzaszhqzbd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nshjgoctfq .gt_row {
+#qzaszhqzbd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -384,7 +375,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#nshjgoctfq .gt_stub {
+#qzaszhqzbd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -396,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-left: 12px;
 }
 
-#nshjgoctfq .gt_summary_row {
+#qzaszhqzbd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -406,7 +397,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#nshjgoctfq .gt_first_summary_row {
+#qzaszhqzbd .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -416,7 +407,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_grand_summary_row {
+#qzaszhqzbd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -426,7 +417,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#nshjgoctfq .gt_first_grand_summary_row {
+#qzaszhqzbd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -436,11 +427,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_striped {
+#qzaszhqzbd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nshjgoctfq .gt_table_body {
+#qzaszhqzbd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -449,7 +440,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_footnotes {
+#qzaszhqzbd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -463,13 +454,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_footnote {
+#qzaszhqzbd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#nshjgoctfq .gt_sourcenotes {
+#qzaszhqzbd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -483,41 +474,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#nshjgoctfq .gt_sourcenote {
+#qzaszhqzbd .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#nshjgoctfq .gt_left {
+#qzaszhqzbd .gt_left {
   text-align: left;
 }
 
-#nshjgoctfq .gt_center {
+#qzaszhqzbd .gt_center {
   text-align: center;
 }
 
-#nshjgoctfq .gt_right {
+#qzaszhqzbd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nshjgoctfq .gt_font_normal {
+#qzaszhqzbd .gt_font_normal {
   font-weight: normal;
 }
 
-#nshjgoctfq .gt_font_bold {
+#qzaszhqzbd .gt_font_bold {
   font-weight: bold;
 }
 
-#nshjgoctfq .gt_font_italic {
+#qzaszhqzbd .gt_font_italic {
   font-style: italic;
 }
 
-#nshjgoctfq .gt_super {
+#qzaszhqzbd .gt_super {
   font-size: 65%;
 }
 
-#nshjgoctfq .gt_footnote_marks {
+#qzaszhqzbd .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -1499,6 +1490,143 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
 </table>
 </div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="presentation-des-données.html#cb3-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>interdit_alimentaire <span class="sc">%&gt;%</span> <span class="fu">str_to_lower</span>()</span></code></pre></div>
+<pre><code>##   [1] &quot;rien&quot;                              &quot;plusieures&quot;                       
+##   [3] &quot;&quot;                                  &quot;rien&quot;                             
+##   [5] &quot;&quot;                                  &quot;aucun&quot;                            
+##   [7] &quot;&quot;                                  &quot;&quot;                                 
+##   [9] &quot;&quot;                                  &quot;&quot;                                 
+##  [11] &quot;&quot;                                  &quot;&quot;                                 
+##  [13] &quot;&quot;                                  &quot;&quot;                                 
+##  [15] &quot;&quot;                                  &quot;&quot;                                 
+##  [17] &quot;aucun&quot;                             &quot;&quot;                                 
+##  [19] &quot;&quot;                                  &quot;&quot;                                 
+##  [21] &quot;&quot;                                  &quot;&quot;                                 
+##  [23] &quot;&quot;                                  &quot;&quot;                                 
+##  [25] &quot;&quot;                                  &quot;aucun&quot;                            
+##  [27] &quot;&quot;                                  &quot;&quot;                                 
+##  [29] &quot;&quot;                                  &quot;&quot;                                 
+##  [31] &quot;&quot;                                  &quot;&quot;                                 
+##  [33] &quot;&quot;                                  &quot;aucun&quot;                            
+##  [35] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [37] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [39] &quot;aucun&quot;                             &quot;viande de mouton&quot;                 
+##  [41] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [43] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [45] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [47] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [49] &quot;aucun&quot;                             &quot;rien&quot;                             
+##  [51] &quot;rien&quot;                              &quot;&quot;                                 
+##  [53] &quot;&quot;                                  &quot;&quot;                                 
+##  [55] &quot;&quot;                                  &quot;&quot;                                 
+##  [57] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [59] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [61] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [63] &quot;aucun&quot;                             &quot;aucun&quot;                            
+##  [65] &quot;&quot;                                  &quot;&quot;                                 
+##  [67] &quot;&quot;                                  &quot;pas des interdits&quot;                
+##  [69] &quot;haricot patate douce&quot;              &quot;la patte, pomme de terre&quot;         
+##  [71] &quot;pas des interdits&quot;                 &quot;pas les interdits alimentaires&quot;   
+##  [73] &quot;&quot;                                  &quot;&quot;                                 
+##  [75] &quot;&quot;                                  &quot;&quot;                                 
+##  [77] &quot;&quot;                                  &quot;&quot;                                 
+##  [79] &quot;&quot;                                  &quot;&quot;                                 
+##  [81] &quot;&quot;                                  &quot;&quot;                                 
+##  [83] &quot;&quot;                                  &quot;&quot;                                 
+##  [85] &quot;&quot;                                  &quot;&quot;                                 
+##  [87] &quot;&quot;                                  &quot;å’ufs&quot;                            
+##  [89] &quot;&quot;                                  &quot;&quot;                                 
+##  [91] &quot;r a s&quot;                             &quot;&quot;                                 
+##  [93] &quot;rien&quot;                              &quot;rien&quot;                             
+##  [95] &quot;&quot;                                  &quot;&quot;                                 
+##  [97] &quot;&quot;                                  &quot;&quot;                                 
+##  [99] &quot;&quot;                                  &quot;&quot;                                 
+## [101] &quot;&quot;                                  &quot;&quot;                                 
+## [103] &quot;rien&quot;                              &quot;&quot;                                 
+## [105] &quot;&quot;                                  &quot;&quot;                                 
+## [107] &quot;&quot;                                  &quot;&quot;                                 
+## [109] &quot;&quot;                                  &quot;ã\200 signaler&quot;                      
+## [111] &quot;ã\200 signaler&quot;                       &quot;&quot;                                 
+## [113] &quot;&quot;                                  &quot;ã\200 signaler&quot;                      
+## [115] &quot;&quot;                                  &quot;&quot;                                 
+## [117] &quot;ã\200 signaler&quot;                       &quot;rien ã\200 sigaler&quot;                  
+## [119] &quot;&quot;                                  &quot;&quot;                                 
+## [121] &quot;&quot;                                  &quot;rien ã  signaler&quot;                 
+## [123] &quot;&quot;                                  &quot;&quot;                                 
+## [125] &quot;rien&quot;                              &quot;&quot;                                 
+## [127] &quot;aliments aromantiques&quot;             &quot;r.a.s&quot;                            
+## [129] &quot;riz, farine de maã\217s&quot;              &quot;&quot;                                 
+## [131] &quot;haricot&quot;                           &quot;&quot;                                 
+## [133] &quot;feuille de manioc et patate douce&quot; &quot;&quot;                                 
+## [135] &quot;patate  douce&quot;                     &quot;&quot;                                 
+## [137] &quot;&quot;                                  &quot;&quot;                                 
+## [139] &quot;&quot;                                  &quot;&quot;                                 
+## [141] &quot;&quot;                                  &quot;&quot;                                 
+## [143] &quot;&quot;                                  &quot;&quot;                                 
+## [145] &quot;&quot;                                  &quot;&quot;                                 
+## [147] &quot;&quot;                                  &quot;&quot;                                 
+## [149] &quot;pas&quot;                               &quot;pas&quot;                              
+## [151] &quot;pas&quot;                               &quot;&quot;                                 
+## [153] &quot;pas&quot;                               &quot;pas&quot;                              
+## [155] &quot;&quot;                                  &quot;pas&quot;                              
+## [157] &quot;pas&quot;                               &quot;pas&quot;                              
+## [159] &quot;pas&quot;                               &quot;pas&quot;                              
+## [161] &quot;pas&quot;                               &quot;pas&quot;                              
+## [163] &quot;pas&quot;                               &quot;pas&quot;                              
+## [165] &quot;pas&quot;                               &quot;pas&quot;                              
+## [167] &quot;pas&quot;                               &quot;&quot;                                 
+## [169] &quot;serpent&quot;                           &quot;&quot;                                 
+## [171] &quot;&quot;                                  &quot;pas&quot;                              
+## [173] &quot;&quot;                                  &quot;pas&quot;                              
+## [175] &quot;&quot;                                  &quot;pas&quot;                              
+## [177] &quot;pas&quot;                               &quot;pas&quot;                              
+## [179] &quot;pas&quot;                               &quot;&quot;                                 
+## [181] &quot;&quot;                                  &quot;&quot;                                 
+## [183] &quot;&quot;                                  &quot;&quot;                                 
+## [185] &quot;&quot;                                  &quot;&quot;                                 
+## [187] &quot;&quot;                                  &quot;pas&quot;                              
+## [189] &quot;rien&quot;                              &quot;&quot;                                 
+## [191] &quot;pas&quot;                               &quot;rien&quot;                             
+## [193] &quot;rien&quot;                              &quot;rien&quot;                             
+## [195] &quot;riz&quot;                               &quot;rien&quot;                             
+## [197] &quot;riz&quot;                               &quot;pas&quot;                              
+## [199] &quot;sombe, foufou&quot;                     &quot;les haricots&quot;                     
+## [201] &quot;viande&quot;                            &quot;pas&quot;                              
+## [203] &quot;rien&quot;                              &quot;rien&quot;                             
+## [205] &quot;rien&quot;                              &quot;pas&quot;                              
+## [207] &quot;pas&quot;                               &quot;pas&quot;                              
+## [209] &quot;&quot;                                  &quot;&quot;                                 
+## [211] &quot;&quot;                                  &quot;&quot;                                 
+## [213] &quot;&quot;                                  &quot;haricots frai&quot;                    
+## [215] &quot;rien&quot;                              &quot;l&#39;huile&quot;                          
+## [217] &quot;aucune&quot;                            &quot;aucune&quot;                           
+## [219] &quot;patate douce&quot;                      &quot;parfait&quot;                          
+## [221] &quot;rien&quot;                              &quot;choux et avocat&quot;                  
+## [223] &quot;aucune&quot;                            &quot;oeufs&quot;                            
+## [225] &quot;&quot;                                  &quot;poisson, viande&quot;                  
+## [227] &quot;&quot;                                  &quot;&quot;                                 
+## [229] &quot;&quot;                                  &quot;&quot;                                 
+## [231] &quot;&quot;                                  &quot;&quot;                                 
+## [233] &quot;&quot;                                  &quot;&quot;                                 
+## [235] &quot;&quot;                                  &quot;&quot;                                 
+## [237] &quot;aucune&quot;                            &quot;&quot;                                 
+## [239] &quot;&quot;                                  &quot;les haricots&quot;                     
+## [241] &quot;&quot;                                  &quot;&quot;                                 
+## [243] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;                  
+## [245] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;                  
+## [247] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;                  
+## [249] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;                  
+## [251] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;                  
+## [253] &quot;pas d&#39;interdits&quot;                   &quot;pad d&#39;interdits&quot;                  
+## [255] &quot;pas d&#39;interdits&quot;                   &quot;pas&quot;                              
+## [257] &quot;pas d&#39;interdits&quot;                   &quot;pas&quot;                              
+## [259] &quot;pas&quot;                               &quot;pas&quot;                              
+## [261] &quot;pas d&#39;interdits&quot;                   &quot;pas&quot;                              
+## [263] &quot;pas&quot;                               &quot;pas&quot;                              
+## [265] &quot;pas&quot;                               &quot;pas&quot;                              
+## [267] &quot;pas&quot;                               &quot;pas&quot;                              
+## [269] &quot;pas d&#39;interdits&quot;                   &quot;pas&quot;                              
+## [271] &quot;pas d&#39;interdits&quot;                   &quot;pas d&#39;interdits&quot;</code></pre>
 
 </div>
             </section>
@@ -1506,8 +1634,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="analyse-des-données.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,2 +1,5 @@
 about
 presentation-des-données
+analyse-des-données
+caractéristiques-des-parents
+les-caractéristiques-de-lenfant

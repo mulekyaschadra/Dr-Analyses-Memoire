@@ -1,0 +1,238 @@
+
+```{r echo=FALSE, include=FALSE}
+library(stargazer)
+library(summarytools)
+library(VIM)
+library(funModeling)
+library(writexl)
+library(dlookr)
+library(kableExtra)
+library(mice)
+```
+
+
+# Analyse des données
+
+# Caractéristiques des parents
+
+```{r}
+df$statut_matrimonial %>% summarytools::freq() %>% kable()
+
+```
+
+81% des parents des enfants sont des mariés, 8,5% des des veuves, 5,5% sont des séparés et 1,8% des divorcé. On comte 4 mères célibataires, soit 1,5% des femmes ayant des enfants en âge scolaire.
+
+
+
+```{r}
+df %>% select(taille_menage,Enfants_age_scolaire) %>% descr(headings = F,transpose = T,stats="common") %>% kable(digits = 2)
+
+
+df %>% ggplot()+ aes(x=Enfants_age_scolaire)+
+  geom_boxplot()
+
+df %>% ggplot()+ aes(x=taille_menage)+
+  geom_boxplot()
+
+
+Tail_men_imp <-  imputate_outlier(df,taille_menage,method = "median") 
+Enfants_age_scolaire_imp <-  imputate_outlier(df,Enfants_age_scolaire,method = "median")
+df <- df %>% cbind(Tail_men_imp,Enfants_age_scolaire_imp)
+
+df %>% select(Tail_men_imp,Enfants_age_scolaire_imp) %>% descr(headings = F,transpose = T,stats="common") %>% kable(digits = 2)
+
+
+
+```
+
+
+```{r}
+
+df %>% aggr()
+quanti_desc <- df %>% descr(headings = F,transpose = T,stats = "fivenum") %>% kable()
+quanti_desc
+
+```
+```{r}
+dir.create("resultats")
+```
+
+
+
+```{r}
+library(dlookr)
+attach(df)
+enfscolaire <-   df %>% dlookr::imputate_outlier(xvar=Enfants_age_scolaire ,method = "capping") 
+enfscolaire %>% descr()
+```
+Le nombre maximal d'enfant en âge scolaire est de 5. 50% des menages ont plus de 2 enfants en âge scolaire
+
+
+
+
+
+```{r}
+df$etre_ecole %>% na.omit() %>% freq()
+Nivet <- df$niveau_etude %>% na.omit() %>% questionr::freq(total=T)
+Nivet <- cbind(Niveau_etude=rownames(Nivet),Nivet)
+rownames(Nivet)=NULL
+Nivet
+
+
+```
+
+
+```{r}
+df$statut_matrimonial %>% cleaner::freq()
+Profession_mere <-  df$ocupation_mere %>% cleaner::freq()
+Profession_mere <- Profession_mere %>% mutate(percent=round(percent*100,2))
+Profession_mere$item <- Profession_mere$item %>%    fct_reorder(.x=Profession_mere$percent)
+graph_prof_mere <-  Profession_mere %>% ggplot()+aes(x=item,y=percent,label=paste0(percent,"%"),fill=item)+
+  geom_bar(stat = "identity")+
+  geom_text(position = position_fill(-1))+
+  coord_flip()+
+  theme_minimal()+ labs(y="",x="")+
+  theme(legend.position = "none",axis.text.x = element_blank(),panel.grid = element_blank())
+
+ggsave(filename = "Profession mere.jpg",plot=graph_prof_mere,bg="white",height = 3)
+```
+
+
+```{r}
+Profession_pere <-  df$ocupation_pere %>% cleaner::freq()
+Profession_pere <- Profession_pere %>% mutate(percent=round(percent*100,2))
+Profession_pere$item <- Profession_pere$item %>% fct_reorder(.x=Profession_pere$percent)
+graph_prof_pere <-  Profession_pere %>% ggplot()+aes(x=item,y=percent,label=paste0(percent,"%"),fill=item)+
+  geom_bar(stat = "identity")+
+  scale_y_continuous(expand = c(0,0))+
+  geom_text(position = position_fill(1))+
+  coord_flip()+
+  theme_minimal()+ labs(y="",x="")+
+  theme(legend.position = "none",axis.text.x = element_blank(),panel.grid = element_blank())
+
+ggsave(filename = "Profession pere.jpg",plot=graph_prof_pere,bg="white",height = 3)
+```
+
+
+```{r}
+
+Hab_alimentaire <-  df$habitude_alimentaire %>% cleaner::freq()
+Hab_alimentaire<- Hab_alimentaire %>% mutate(percent=round(percent*100,1))
+Hab_alimentaire$item <- Hab_alimentaire$item %>%   fct_reorder(.x=Hab_alimentaire$percent)
+graph_Hab_alimentaire<-  Hab_alimentaire %>% ggplot()+aes(x=item,y=percent,label=paste0(percent,"%"),fill=item)+
+  geom_bar(stat = "identity")+
+  geom_text(position = position_fill(0.8))+
+  coord_flip()+
+  theme_minimal()+ labs(y="",x="")+
+  theme(legend.position = "none",axis.text.x = element_blank(),panel.grid = element_blank())
+
+ggsave(filename = "Habitudes alimentaires.jpg",plot=graph_Hab_alimentaire,bg="white",height = 2.5)
+```
+
+interdis alimentaires de la mere pendant la période de la  grossesse
+```{r}
+df$interdit_alimentaire %>% na.omit()
+df$interdit_alimentaire <- df$interdit_alimentaire %>% str_to_lower() %>% str_replace("rien","aucun") %>% 
+  str_replace("r.a.s","aucun")
+df$interdit_alimentaire <- df$interdit_alimentaire %>% str_conv(encoding = "utf-8")
+df$interdit_alimentaire %>% table()
+```
+
+
+```{r}
+deplace_O_N_imp <- imputate_na(df,xvar = deplace_O_N,method = "mode")
+deplace_O_N_imp <- deplace_O_N_imp %>% cleaner::freq()
+
+```
+
+
+```{r}
+
+deplace_O_N_imp <- deplace_O_N_imp %>% as.data.frame()
+deplace_O_N_imp <- deplace_O_N_imp %>% mutate(percent=round(percent*100,1),
+         cum_percent=round(cum_percent*100,0)) %>% rename("Residence"=item)
+
+deplace_O_N_imp$ymax <- deplace_O_N_imp$cum_percent
+deplace_O_N_imp$ymin <- c(0, head(deplace_O_N_imp$ymax, n=-1))
+
+
+# Compute label position
+deplace_O_N_imp$labelPosition <- (deplace_O_N_imp$ymax + deplace_O_N_imp$ymin) / 2
+
+deplace_O_N_imp$Residence <- deplace_O_N_imp$Residence %>% fct_recode("Déplacé"="Oui","Resident"="Non")
+
+# Compute a good label
+deplace_O_N_imp$label <- paste0(deplace_O_N_imp$Residence, "\n Effectif : ", deplace_O_N_imp$count,"\nPourcentage: ",deplace_O_N_imp$percent,"%")
+
+
+
+graph_Residence <- ggplot(deplace_O_N_imp, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Residence)) +
+  geom_rect() +
+  geom_text( x=1, aes(y=labelPosition, label=label, color=Residence), size=6) +
+  #scale_fill_brewer(palette=6) +
+  scale_fill_manual(values = c("steelblue","forestgreen","pink"))+
+  scale_color_manual(values = c("steelblue","forestgreen","pink"))+
+  coord_polar(theta="y") +
+  xlim(c(-2.5, 4)) +
+  theme_void() +
+  theme(legend.position = "none")
+
+ggsave(filename = "Deplaces.jpg",plot = graph_Residence,bg="white")
+
+```
+
+
+## Les caractéristiques de l'enfant
+
+```{r}
+caracteres_enfants <- df %>% select(contains("enfant")) %>% descr(transpose = T,stats = "common",headings = T)
+
+caracteres_enfants <- caracteres_enfants %>% as.data.frame()
+caracteres_enfants <- cbind(variable=rownames(caracteres_enfants),caracteres_enfants)
+rownames(caracteres_enfants)=NULL
+caracteres_enfants %>% select(-N.Valid,-Pct.Valid) %>% kable()
+
+```
+
+```{r}
+sexe_e <-  imputate_na(df,sexe_enfant, method = "mode")
+sexe_e <- sexe_e%>% cleaner::freq(total = T)
+
+sexe_e <- sexe_e %>% as.data.frame()
+sexe_e<- sexe_e %>% mutate(percent=round(percent*100,1),
+         cum_percent=round(cum_percent*100,0)) %>% rename("sexe"=item)
+
+sexe_e$ymax <- sexe_e$cum_percent
+sexe_e$ymin <- c(0, head(sexe_e$ymax, n=-1))
+
+
+# Compute label position
+sexe_e$labelPosition <- (sexe_e$ymax + sexe_e$ymin) / 2
+
+# Compute a good label
+sexe_e$label <- paste0(sexe_e$sexe, "\n Effectif : ", sexe_e$count,"\nPourcentage: ",sexe_e$percent,"%")
+
+graph_sexe <- ggplot(sexe_e, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=sexe)) +
+  geom_rect() +
+  geom_text( x=1, aes(y=labelPosition, label=label, color=sexe), size=6) +
+  #scale_fill_brewer(palette=6) +
+  scale_fill_manual(values = c("steelblue","forestgreen","pink"))+
+  scale_color_manual(values = c("steelblue","forestgreen","pink"))+
+  coord_polar(theta="y") +
+  xlim(c(-2.5, 4)) +
+  theme_void() +
+  theme(legend.position = "none")
+
+ggsave(filename = "sexe.jpg",plot = graph_sexe,bg="white",height=9,width = 9)
+
+graph_sexe
+```
+
+
+
+
+```{r}
+Lieu_accouche <- df$Lieu_accouchement %>% questionr::freq(total = T)
+La <- imputate_na(df,xvar = Lieu_accouchement,method = "mode")
+```
+

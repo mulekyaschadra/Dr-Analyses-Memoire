@@ -1,5 +1,4 @@
-"0","df %>% glimpse()
-"
+"0","df %>% glimpse()"
 "1","Rows: 272"
 "1",""
 "1","
@@ -8,99 +7,105 @@
 "1",""
 "1","
 "
-"1","$ Num_Fiche                     [3m[38;5;246m<dbl>[39m[23m 272, 271, 270, 269, 242, 241, 269, 268, 267, 266, 250, 249, 248~
-$ adresse_village               [3m[38;5;246m<chr>[39m[23m ""Kaduki"", ""Birere"", ""Kaduki"", ""Birere"", ""KATEMBE"", ""KATEMBE"", ""~
-$ Aire_de_sante                 [3m[38;5;246m<chr>[39m[23m ""Kaduki"", ""Kaduki"", ""Kaduki"", ""Kaduki"", ""KARUBA"", ""KARUBA"", ""BU~
-$ statut_matrimonial            [3m[38;5;246m<fct>[39m[23m Marié, séparé, séparé, Célibataire, Marié, Marié, veuve, Marié,~
-$ taille_menage                 [3m[38;5;246m<dbl>[39m[23m 6, 9, 5, 8, 6, 7, 5, 8, 8, 6, 10, 7, 8, 6, 13, 8, 9, 8, 6, 11, ~
-$ Enfants_age_scolaire          [3m[38;5;246m<dbl>[39m[23m 1, 7, 2, 5, 5, 2, 2, 2, 2, 1, 5, 1, 3, 2, 3, 5, 3, 3, 3, 3, 1, ~
-$ etre_ecole                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Non, Oui, Non, Non, NA, Non, Non, Non, Non,~
-$ niveau_etude                  [3m[38;5;246m<fct>[39m[23m Secondaire, NA, Primaire, Secondaire, NA, Primaire, NA, NA, NA,~
-$ Autre                         [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ ocupation_mere                [3m[38;5;246m<fct>[39m[23m Commerçante, Ménagère, Commerçante, Commerçante, Cultivatrice, ~
-$ autre_occupation              [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """",~
-$ ocupation_pere                [3m[38;5;246m<fct>[39m[23m Cultivatrice, NA, Autre, Commerçante, Autre, Cultivatrice, NA, ~
-$ autre_occupation_pere         [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", ""Scieur"", ""Scieur"", """", """", ""Mo~
-$ habitude_alimentaire          [3m[38;5;246m<fct>[39m[23m Multivarié, Monotone, Multivarié, Monotone, Multivarié, Multiva~
-$ Autre_habitude                [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ interdit_alimentaire          [3m[38;5;246m<chr>[39m[23m ""Rien"", ""Plusieures"", """", ""Rien"", """", ""Aucun"", """", """", """", """", ~
-$ deplace_O_N                   [3m[38;5;246m<fct>[39m[23m Non, Oui, Oui, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ cause_deplacement             [3m[38;5;246m<fct>[39m[23m NA, Guerre, Guerre, Guerre, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ autre_cause_d                 [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """",~
-$ Age_enfant                    [3m[38;5;246m<dbl>[39m[23m 72, 8, 12, NA, 144, 108, 84, 9, 8, 84, 9, 132, 96, 108, 132, 86~
-$ sexe_enfant                   [3m[38;5;246m<fct>[39m[23m Masculin, Masculin, Masculin, Masculin, Masculin, Féminin, Masc~
-$ Lieu_accouchement             [3m[38;5;246m<fct>[39m[23m FOSA, NA, NA, FOSA, FOSA, FOSA, FOSA, FOSA, à domicile, à domic~
-$ taille_enfant                 [3m[38;5;246m<chr>[39m[23m ""100.0"", ""160.0"", ""170.0"", ""105.0"", ""129.0"", ""125.0"", ""160.0"", ~
-$ poids_enfant                  [3m[38;5;246m<chr>[39m[23m ""18.0"", ""10.7"", ""160.0"", ""4.0"", ""28.9"", ""23.7"", ""21.5"", ""25.0"",~
-$ perimetre_enfant              [3m[38;5;246m<chr>[39m[23m ""200.0"", ""160.0"", """", ""112.0"", ""17.7"", ""15.5"", ""160.0"", ""175.0""~
-$ age_gestation                 [3m[38;5;246m<fct>[39m[23m 9 mois, <9 mois, 9 mois, 9 mois, 9 mois, 9 mois, 9 mois, 9 mois~
-$ pese_naissance                [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Non, Non, Non, Non, Non~
-$ poids_enfant_naissance        [3m[38;5;246m<chr>[39m[23m ""3200.0"", ""4.5"", """", ""2000.0"", ""3500.0"", ""3500.0"", """", ""4500.0""~
-$ vaccin                        [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Non~
-$ type_vaccin                   [3m[38;5;246m<chr>[39m[23m ""5 4 3 2 1"", ""1 2 3 4"", ""1 2 3 4"", ""1 2 3 4"", ""5"", ""5"", ""1 2 3 ~
-$ type_vaccin1                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 1, 1, 1, 1, 0, 0, 0,~
-$ type_vaccin2                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 1, 0, 0, 0,~
-$ type_vaccin3                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 0, 0, 0, 0,~
-$ type_vaccin4                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 0, 0, 0, 0,~
-$ type_vaccin5                  [3m[38;5;246m<dbl>[39m[23m 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, NA, 1, 0, 0, 0, 1, 1, 1, 1,~
-$ type_vaccin6                  [3m[38;5;246m<dbl>[39m[23m 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 1, 0, 0, 0, 0, 0,~
-$ Autre_vaccin                  [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ supplement                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Non, Oui, Oui, Oui, Oui, Oui, Oui~
-$ fievre_O_N                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Non, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ IRA                           [3m[38;5;246m<fct>[39m[23m Oui, NA, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non,~
-$ rougeole                      [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ oeudemes                      [3m[38;5;246m<fct>[39m[23m Non, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ diarrhee                      [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ consultation                  [3m[38;5;246m<fct>[39m[23m La FOSA, La FOSA, La FOSA, La FOSA, La FOSA, La FOSA, La FOSA, ~
-$ autre_consulte                [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", ""Ã€ domicile"", ""Domicile"", """", """", ~
-$ nb_repas                      [3m[38;5;246m<fct>[39m[23m 2 fois, 1 fois, 2 fois, 1 fois, 2 fois, 2 fois, 2 fois, 2 fois,~
-$ nb_fois_fruits                [3m[38;5;246m<fct>[39m[23m Une fois, Aucune, Chaque jour, Chaque jour, Aucune, Aucune, Auc~
-$ collation_ecole               [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ espace_enfant_aine            [3m[38;5;246m<chr>[39m[23m """", ""1.0"", ""3.0"", ""2.0"", ""4.0"", ""0.0"", ""2.5"", """", ""1.5"", """", ""1~
-$ allaitement                   [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui~
-$ raisons_non_allaitement       [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ temps_allaitement             [3m[38;5;246m<fct>[39m[23m Dans 30 min, Dans 30 min, Dans 1 heure, Dans 30 min, Dans 1 heu~
-$ aliment_autre                 [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Non, Non, NA, Oui, Oui, Oui, Non, Non, Non, Oui,~
-$ type_autre_repas              [3m[38;5;246m<fct>[39m[23m Bouillie, Autre lait que le lait maternel, L'eau, NA, NA, NA, L~
-$ presse_1_lait_maternel        [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Oui, Non, Oui, Non, Non, Non, Non, Non, Oui~
-$ raison_presse_lait            [3m[38;5;246m<fct>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, Sale, NA, NA, N~
-$ Raison_presse_lait_autre      [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ allaitement_apres_acouchement [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui~
-$ temps_allaitement_apres       [3m[38;5;246m<dbl>[39m[23m 20, 15, 1, 12, 23, 20, 9, 5, 5, 10, 6, 6, 2, 6, 14, 16, 16, 16,~
-$ allaitement_exclusif_mois     [3m[38;5;246m<dbl>[39m[23m 5, NA, 24, 6, 6, 6, 6, 6, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6~
-$ allaitement_enfant            [3m[38;5;246m<dbl>[39m[23m 12, 16, 16, 12, 48, 30, 18, 24, 10, 18, 28, 20, 24, 24, 2, 24, ~
-$ occupe_enfant                 [3m[38;5;246m<fct>[39m[23m Grand-mère, Mère, Mère, Berceuse, Mère, Mère, Mère, Mère, Mère,~
-$ age_mere                      [3m[38;5;246m<dbl>[39m[23m 26, 37, 23, NA, 38, 25, 27, 30, 30, 23, 30, 25, 30, 28, 46, 42,~
-$ age_premiere_grossesse        [3m[38;5;246m<dbl>[39m[23m 17, 19, 19, NA, 17, 15, 16, 17, 17, 16, 14, 15, 16, 19, 25, 22,~
-$ nb_grosssesse                 [3m[38;5;246m<dbl>[39m[23m 4, 9, 4, NA, 6, 5, 4, 6, 6, 4, 8, 5, 6, 4, 13, 8, 11, 6, 6, 9, ~
-$ CPN                           [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui~
-$ duree_debut_CPN               [3m[38;5;246m<dbl>[39m[23m 5, 4, 5, 4, 3, 3, 6, 5, 7, 5, 7, 6, 4, 7, 3, 4, 4, NA, 3, 3, 4,~
-$ nb_fois_serviceCPN            [3m[38;5;246m<dbl>[39m[23m 3, 4, 4, 4, 4, 3, 3, 2, 2, 3, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 3, ~
-$ connait_Planing               [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Non, Non, Non, Oui, Non, Non, Non, Oui, Non, Non~
-$ planing_utilise               [3m[38;5;246m<fct>[39m[23m Non, Non, Non, NA, NA, NA, Non, NA, NA, NA, Non, NA, NA, Oui, N~
-$ methode_planing               [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """",~
-$ methode_planing1              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ methode_planing2              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ methode_planing3              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ methode_planing4              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ methode_planing5              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ moment_lavage                 [3m[38;5;246m<chr>[39m[23m ""1 2 6"", ""2 3 4 6"", ""1 2 3 4 5 6"", ""1 2 3 5 6"", ""6"", ""6"", ""1 4 ~
-$ moment_lavage1                [3m[38;5;246m<dbl>[39m[23m 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, ~
-$ moment_lavage2                [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, ~
-$ moment_lavage3                [3m[38;5;246m<dbl>[39m[23m 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, ~
-$ moment_lavage4                [3m[38;5;246m<dbl>[39m[23m 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, ~
-$ moment_lavage5                [3m[38;5;246m<dbl>[39m[23m 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, ~
-$ moment_lavage6                [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, ~
-$ moment_lavage7                [3m[38;5;246m<dbl>[39m[23m 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
-$ autre_moment                  [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-$ source_eau                    [3m[38;5;246m<fct>[39m[23m Robinet Public, Source non  protégé, Source Protégée, Rivière, ~
-$ temps_puiser_eau              [3m[38;5;246m<dbl>[39m[23m 10, 10, 34, NA, 30, 35, 90, 90, 90, 80, 90, 90, 90, 90, 5, 60, ~
-$ traitement_eau                [3m[38;5;246m<fct>[39m[23m Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
-$ latrine                       [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Non, Oui, NA, Oui, Non, Non, Oui,~
-$ type_latrine                  [3m[38;5;246m<fct>[39m[23m Latrine partagée, Latrine partagée, Latrine partagée, Privée, P~
-$ autre_latrine                 [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", ""Voisin"", """", """", """", """", ""Chez le vois~
-$ poubelle                      [3m[38;5;246m<fct>[39m[23m Pas de pubelle, À ciel ouvert, À ciel ouvert, À ciel ouvert, Pa~
-$ autre_poubelle                [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """",~"
+"1","$ Num_Fiche                     [3m[38;5;246m<dbl>[39m[23m 272, 271, 270, 269, 242, 241, 269, 268, 267, 266, 250, 249, 24~
+$ adresse_village               [3m[38;5;246m<chr>[39m[23m ""Kaduki"", ""Birere"", ""Kaduki"", ""Birere"", ""KATEMBE"", ""KATEMBE"", ~
+$ Aire_de_sante                 [3m[38;5;246m<chr>[39m[23m ""Kaduki"", ""Kaduki"", ""Kaduki"", ""Kaduki"", ""KARUBA"", ""KARUBA"", ""B~
+$ statut_matrimonial            [3m[38;5;246m<fct>[39m[23m Marié, séparé, séparé, Célibataire, Marié, Marié, veuve, Marié~
+$ taille_menage                 [3m[38;5;246m<dbl>[39m[23m 6, 9, 5, 8, 6, 7, 5, 8, 8, 6, 10, 7, 8, 6, 13, 8, 9, 8, 6, 11,~
+$ Enfants_age_scolaire          [3m[38;5;246m<dbl>[39m[23m 1, 7, 2, 5, 5, 2, 2, 2, 2, 1, 5, 1, 3, 2, 3, 5, 3, 3, 3, 3, 1,~
+$ etre_ecole                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Non, Oui, Non, Non, NA, Non, Non, Non, Non~
+$ niveau_etude                  [3m[38;5;246m<fct>[39m[23m Secondaire, NA, Primaire, Secondaire, NA, Primaire, NA, NA, NA~
+$ Autre                         [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ ocupation_mere                [3m[38;5;246m<fct>[39m[23m Commerçante, Ménagère, Commerçante, Commerçante, Cultivatrice,~
+$ autre_occupation              [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """"~
+$ ocupation_pere                [3m[38;5;246m<fct>[39m[23m Cultivatrice, NA, Autre, Commerçante, Autre, Cultivatrice, NA,~
+$ autre_occupation_pere         [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", ""Scieur"", ""Scieur"", """", """", ""M~
+$ habitude_alimentaire          [3m[38;5;246m<fct>[39m[23m Multivarié, Monotone, Multivarié, Monotone, Multivarié, Multiv~
+$ Autre_habitude                [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ interdit_alimentaire          [3m[38;5;246m<chr>[39m[23m ""Rien"", ""Plusieures"", """", ""Rien"", """", ""Aucun"", """", """", """", """",~
+$ deplace_O_N                   [3m[38;5;246m<fct>[39m[23m Non, Oui, Oui, Oui, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ cause_deplacement             [3m[38;5;246m<fct>[39m[23m NA, Guerre, Guerre, Guerre, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ autre_cause_d                 [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """"~
+$ Age_enfant                    [3m[38;5;246m<dbl>[39m[23m 72, 8, 12, NA, 144, 108, 84, 9, 8, 84, 9, 132, 96, 108, 132, 8~
+$ sexe_enfant                   [3m[38;5;246m<fct>[39m[23m Masculin, Masculin, Masculin, Masculin, Masculin, Féminin, Mas~
+$ Lieu_accouchement             [3m[38;5;246m<fct>[39m[23m FOSA, NA, NA, FOSA, FOSA, FOSA, FOSA, FOSA, à domicile, à domi~
+$ taille_enfant                 [3m[38;5;246m<chr>[39m[23m ""100.0"", ""160.0"", ""170.0"", ""105.0"", ""129.0"", ""125.0"", ""160.0"",~
+$ poids_enfant                  [3m[38;5;246m<chr>[39m[23m ""18.0"", ""10.7"", ""160.0"", ""4.0"", ""28.9"", ""23.7"", ""21.5"", ""25.0""~
+$ perimetre_enfant              [3m[38;5;246m<chr>[39m[23m ""200.0"", ""160.0"", """", ""112.0"", ""17.7"", ""15.5"", ""160.0"", ""175.0~
+$ age_gestation                 [3m[38;5;246m<fct>[39m[23m 9 mois, <9 mois, 9 mois, 9 mois, 9 mois, 9 mois, 9 mois, 9 moi~
+$ pese_naissance                [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Non, Non, Non, Non, No~
+$ poids_enfant_naissance        [3m[38;5;246m<chr>[39m[23m ""3200.0"", ""4.5"", """", ""2000.0"", ""3500.0"", ""3500.0"", """", ""4500.0~
+$ vaccin                        [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, No~
+$ type_vaccin                   [3m[38;5;246m<chr>[39m[23m ""5 4 3 2 1"", ""1 2 3 4"", ""1 2 3 4"", ""1 2 3 4"", ""5"", ""5"", ""1 2 3~
+$ type_vaccin1                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 1, 1, 1, 1, 0, 0, 0~
+$ type_vaccin2                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 1, 0, 0, 0~
+$ type_vaccin3                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 0, 0, 0, 0~
+$ type_vaccin4                  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, NA, 1, 0, 1, 1, 0, 0, 0, 0~
+$ type_vaccin5                  [3m[38;5;246m<dbl>[39m[23m 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, NA, 1, 0, 0, 0, 1, 1, 1, 1~
+$ type_vaccin6                  [3m[38;5;246m<dbl>[39m[23m 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NA, 0, 0, 1, 0, 0, 0, 0, 0~
+$ Autre_vaccin                  [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ supplement                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Non, Oui, Oui, Oui, Oui, Oui, Ou~
+$ fievre_O_N                    [3m[38;5;246m<fct>[39m[23m Oui, Oui, Non, Oui, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ IRA                           [3m[38;5;246m<fct>[39m[23m Oui, NA, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non~
+$ rougeole                      [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ oeudemes                      [3m[38;5;246m<fct>[39m[23m Non, Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ diarrhee                      [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ consultation                  [3m[38;5;246m<fct>[39m[23m La FOSA, La FOSA, La FOSA, La FOSA, La FOSA, La FOSA, La FOSA,~
+$ autre_consulte                [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", ""Ã€ domicile"", ""Domicile"", """", """",~
+$ nb_repas                      [3m[38;5;246m<fct>[39m[23m 2 fois, 1 fois, 2 fois, 1 fois, 2 fois, 2 fois, 2 fois, 2 fois~
+$ nb_fois_fruits                [3m[38;5;246m<fct>[39m[23m Une fois, Aucune, Chaque jour, Chaque jour, Aucune, Aucune, Au~
+$ collation_ecole               [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ espace_enfant_aine            [3m[38;5;246m<chr>[39m[23m """", ""1.0"", ""3.0"", ""2.0"", ""4.0"", ""0.0"", ""2.5"", """", ""1.5"", """", ""~
+$ allaitement                   [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Ou~
+$ raisons_non_allaitement       [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ temps_allaitement             [3m[38;5;246m<fct>[39m[23m Dans 30 min, Dans 30 min, Dans 1 heure, Dans 30 min, Dans 1 he~
+$ aliment_autre                 [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Non, Non, NA, Oui, Oui, Oui, Non, Non, Non, Oui~
+$ type_autre_repas              [3m[38;5;246m<fct>[39m[23m Bouillie, Autre lait que le lait maternel, L'eau, NA, NA, NA, ~
+$ presse_1_lait_maternel        [3m[38;5;246m<fct>[39m[23m Non, Non, Non, Non, Oui, Non, Oui, Non, Non, Non, Non, Non, Ou~
+$ raison_presse_lait            [3m[38;5;246m<fct>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, Sale, NA, NA, ~
+$ Raison_presse_lait_autre      [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ allaitement_apres_acouchement [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Ou~
+$ temps_allaitement_apres       [3m[38;5;246m<dbl>[39m[23m 20, 15, 1, 12, 23, 20, 9, 5, 5, 10, 6, 6, 2, 6, 14, 16, 16, 16~
+$ allaitement_exclusif_mois     [3m[38;5;246m<dbl>[39m[23m 5, NA, 24, 6, 6, 6, 6, 6, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, ~
+$ allaitement_enfant            [3m[38;5;246m<dbl>[39m[23m 12, 16, 16, 12, 48, 30, 18, 24, 10, 18, 28, 20, 24, 24, 2, 24,~
+$ occupe_enfant                 [3m[38;5;246m<fct>[39m[23m Grand-mère, Mère, Mère, Berceuse, Mère, Mère, Mère, Mère, Mère~
+$ age_mere                      [3m[38;5;246m<dbl>[39m[23m 26, 37, 23, NA, 38, 25, 27, 30, 30, 23, 30, 25, 30, 28, 46, 42~
+$ age_premiere_grossesse        [3m[38;5;246m<dbl>[39m[23m 17, 19, 19, NA, 17, 15, 16, 17, 17, 16, 14, 15, 16, 19, 25, 22~
+$ nb_grosssesse                 [3m[38;5;246m<dbl>[39m[23m 4, 9, 4, NA, 6, 5, 4, 6, 6, 4, 8, 5, 6, 4, 13, 8, 11, 6, 6, 9,~
+$ CPN                           [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Oui, Ou~
+$ duree_debut_CPN               [3m[38;5;246m<dbl>[39m[23m 5, 4, 5, 4, 3, 3, 6, 5, 7, 5, 7, 6, 4, 7, 3, 4, 4, NA, 3, 3, 4~
+$ nb_fois_serviceCPN            [3m[38;5;246m<dbl>[39m[23m 3, 4, 4, 4, 4, 3, 3, 2, 2, 3, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 3,~
+$ connait_Planing               [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Non, Non, Non, Oui, Non, Non, Non, Oui, Non, No~
+$ planing_utilise               [3m[38;5;246m<fct>[39m[23m Non, Non, Non, NA, NA, NA, Non, NA, NA, NA, Non, NA, NA, Oui, ~
+$ methode_planing               [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """"~
+$ methode_planing1              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ methode_planing2              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ methode_planing3              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ methode_planing4              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ methode_planing5              [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ moment_lavage                 [3m[38;5;246m<chr>[39m[23m ""1 2 6"", ""2 3 4 6"", ""1 2 3 4 5 6"", ""1 2 3 5 6"", ""6"", ""6"", ""1 4~
+$ moment_lavage1                [3m[38;5;246m<dbl>[39m[23m 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0,~
+$ moment_lavage2                [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,~
+$ moment_lavage3                [3m[38;5;246m<dbl>[39m[23m 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1,~
+$ moment_lavage4                [3m[38;5;246m<dbl>[39m[23m 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,~
+$ moment_lavage5                [3m[38;5;246m<dbl>[39m[23m 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,~
+$ moment_lavage6                [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,~
+$ moment_lavage7                [3m[38;5;246m<dbl>[39m[23m 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,~
+$ autre_moment                  [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+$ source_eau                    [3m[38;5;246m<fct>[39m[23m Robinet Public, Source non  protégé, Source Protégée, Rivière,~
+$ temps_puiser_eau              [3m[38;5;246m<dbl>[39m[23m 10, 10, 34, NA, 30, 35, 90, 90, 90, 80, 90, 90, 90, 90, 5, 60,~
+$ traitement_eau                [3m[38;5;246m<fct>[39m[23m Oui, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, Non, No~
+$ latrine                       [3m[38;5;246m<fct>[39m[23m Oui, Oui, Oui, Oui, Oui, Oui, Non, Oui, NA, Oui, Non, Non, Oui~
+$ type_latrine                  [3m[38;5;246m<fct>[39m[23m Latrine partagée, Latrine partagée, Latrine partagée, Privée, ~
+$ autre_latrine                 [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", ""Voisin"", """", """", """", """", ""Chez le voi~
+$ poubelle                      [3m[38;5;246m<fct>[39m[23m Pas de pubelle, À ciel ouvert, À ciel ouvert, À ciel ouvert, P~
+$ autre_poubelle                [3m[38;5;246m<chr>[39m[23m """", """", """", """", """", """", """", """", """", """", """", """", """", """", """", """"~"
 "1",""
 "1","
 "
+"0","df$taille_enfant <- df$taille_enfant %>% as.numeric()"
+"0","df$poids_enfant <- df$poids_enfant %>% as.numeric()"
+"0","df$poids_enfant_naissance <- df$poids_enfant_naissance %>% as.numeric()"
+"0","df$espace_enfant_aine <- df$espace_enfant_aine  %>% as.numeric()"
+"0","df$perimetre_enfant <- df$perimetre_enfant %>% as.numeric()"
+"0",""
